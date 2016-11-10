@@ -1,0 +1,34 @@
+# Site Settings
+title: HCI2
+description: ""
+baseurl: ""
+url: ""
+author: "Angus P, Chris C, Ben S, Kerel K"
+author_avatar: ""
+
+
+# Main Navigation (Manual)
+navigation:
+ - text: Home
+   url: /
+
+# Build Settings
+paginate: 3
+paginate_path: "posts/page:num"
+markdown: kramdown
+permalink: pretty
+highlighter: rouge
+gems: [jekyll-paginate]
+sass:
+  style: compressed
+
+
+# Addition content types
+# collections:
+#   projects:
+#     output: false
+#   unlisted:
+#     output: true
+#     layout: clear
+#     permalink: /unlisted/:path/
+
