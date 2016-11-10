@@ -2,3 +2,34 @@
 # Front matter ensures Jekyll reads file
 ---
 
+$theme_colour: {{ site.theme_dark_blue }};
+
+$copy_colour: #181818;
+
+$serif_font: 'Crimson Text', serif;
+$sans_font: 'Source Sans Pro', sans-serif;
+
+$grid_gutter_width: 30px;
+$container_tablet: 720px + $grid_gutter_width;
+$container_desktop: 940px + $grid_gutter_width;
+$container_large: 1140px + $grid_gutter_width;
+
+
+header.headercontainer {
+    padding: 1rem 3rem;
+    font-size: 1.3em;
+    height: 4em;
+
+    img.mainlogo {
+        height: 100%;
+    }
+}
+
+@media (min-width: $container_tablet) {
+    header.headercontainer {
+        padding: 2rem 4rem;
+        font-size: 1.5em;
+        height: 6em;
+    }
+}
+

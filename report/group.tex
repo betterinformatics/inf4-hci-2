@@ -21,6 +21,16 @@
 \usepackage{fancyvrb} % extended verbatim environments\
 \fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
 
+\let\origdescription\description
+\renewenvironment{description}{
+  \setlength{\leftmargini}{0em}
+  \origdescription
+  \setlength{\itemindent}{0em}
+  \setlength{\labelsep}{\textwidth}
+}
+{\endlist}
+
+
 \begin{document}
 \maketitle % this prints the handout title, author, and date
 \vspace{1em}
@@ -53,8 +63,23 @@
 %       ^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^
 
 
-%\newpage
-%\section*{\textbf{Appendix}}
+\newpage
+\section*{\textbf{Appendix}}
+
+\subsection*{Sources and Libraries}
+
+\begin{description}
+
+\item[BootStrap]
+Web framework (CSS, JavaScript) freely available, created by Twitter.
+\href{http://getbootstrap.com/}{http://getbootstrap.com/}
+
+\item[FontAwesome]
+Web Icon set, freely available.
+\href{http://fontawesome.io/}{http://fontawesome.io/}
+
+
+\end{description}
 
 %\bibliography{group}
 %\bibliographystyle{plainnat}
