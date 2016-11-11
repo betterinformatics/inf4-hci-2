@@ -234,14 +234,16 @@ header.mainhead {
 
 .timeline-line.arrow-bottom::after {
     position: absolute;
-    bottom: -25px;
-    left:-17px;
+    bottom: -15px;
+    left:-7px;
     content: '';
     background: none;
-    border: 20px solid $theme_dark_blue;
+    border: 10px solid $theme_dark_blue;
     border-bottom-color: transparent;
     border-left-color: transparent;
     border-right-color: transparent;
+    border-top-width: 20px;
+    border-bottom-width: 0px;
     display: inline-block;
     height: 0;
     width: 0;
