@@ -206,7 +206,7 @@ header.mainhead {
 .timeline {
     position: relative;
     margin: 10px 0px;
-    padding: 20px 0px;
+    padding: 2em 0.5em;
 
     .timeline-card-icon {
         display: inline-block;
@@ -391,7 +391,12 @@ header.mainhead {
     }
 
     .timeline {
-        padding: 0.5em;
+
+        
+        .timeline-line{
+            left: 3.5em;
+        }
+
     }
 
     .timeline .timeline-block.block-right .timeline-content {
@@ -399,8 +404,7 @@ header.mainhead {
     }
 
     .timeline .timeline-dot {
-        left: 0px;
-        margin: 0 auto;
+        left: 3.1em;
         margin-top: 10px;
         margin-bottom: 20px;
         border-radius: 50% 50% 50% 0 !important;

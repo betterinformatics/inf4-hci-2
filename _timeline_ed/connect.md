@@ -53,3 +53,14 @@ to access the internet via the KeyCom service. The basic package is *free*,
 paid upgrades are available. Setup instructions will be given to you
 when you arrive.
 
+<div class="alert alert-info">
+    <i class="fa fa-star"></i> <strong>Protip:</strong>
+    If you're having trouble getting set up, you can attend one of the <strong>Get Connected</strong>
+    sessions during Fresher's week or the semester.
+    <br><br>
+    <a href="http://www.ed.ac.uk/information-services/about/news/get-connected-sessions-for-new-students"
+    class="btn btn-sm btn-info">
+    Get Connected Sessions
+    </a>
+</div>
+

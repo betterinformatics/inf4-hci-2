@@ -19,5 +19,6 @@ are open **24/7**, with a Student Card being required to enter before 8am, after
 Your timetable will only be available once you've made your course choices - 
 emails during Fresher's week and meeting your PT will help you do this.
 
-
-
+<span class="text-danger">
+TODO: Interactive or better map
+</span>
