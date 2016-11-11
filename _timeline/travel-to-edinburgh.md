@@ -4,10 +4,16 @@ icon: location-arrow
 date: 2015-10-10
 ---
 
-The City of Edinburgh can be accessed by numerous modes of transport.
+The City of Edinburgh is generally well connected, with rail air and road links to the rest 
+of the UK and world.
+
+<div class="alert alert-info">
+    <i class="fa fa-star"></i> <strong>Protip:</strong>
+    Booking travel as soon as possible will be significantly cheaper than booking late.
+</div>
 
 <hr>
-<h4>Air &nbsp;<i class="fa fa-plane"></i></h4>
+<h4>Air &nbsp;<i class="fa fa-plane muted"></i></h4>
 
 Edinburgh is served by an international airport that has direct connections to most of Europe as well as North America and Asia. KLM, Qatar Airways, American Airlines, Ryanair and easyJet are amongst the airlines operating at the airport.
 
@@ -19,7 +25,7 @@ The *Airlink 100* and *Edinburgh Trams* connect the airport and city centre with
 </a>
 
 <hr>
-<h4>Rail &nbsp;<i class="fa fa-train"></i></h4>
+<h4>Rail &nbsp;<i class="fa fa-train muted"></i></h4>
 
 The city's main station, Edinburgh Waverley, connects the majority of Scotland with the capital. There are daily services connecting the city with major English cities such as London, Birmingham, Manchester and Bristol.
 
@@ -35,7 +41,7 @@ The city's main station, Edinburgh Waverley, connects the majority of Scotland w
 </div>
 
 <hr>
-<h4>Road &nbsp;<i class="fa fa-car"></i></h4>
+<h4>Road &nbsp;<i class="fa fa-car muted"></i></h4>
 
 Edinburgh is the terminus of the M8 and M9 motorways that connects the Scottish Central Belt, Northern Scotland and the spine of England.
 

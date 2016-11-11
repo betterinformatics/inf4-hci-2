@@ -77,6 +77,7 @@ html, body {
     letter-spacing: 0.1em;
     font-size: 1.3em;
     font-weight: bold;
+    margin-bottom: 0.5em;
 }
 
 .narrative-heading:before,
@@ -86,7 +87,7 @@ html, body {
 }
 
 .colourback {
-    background-color: #FFF;
+    background-color: #fff;
     padding: 0.5em 0;
 }
 
@@ -348,7 +349,7 @@ header.mainhead {
     }
 }
 
-.timeline-time {
+.timeline-warn {
     padding: 0.5em 0 1.5em 0;
     color: $theme_red;
     text-transform: uppercase;
@@ -356,12 +357,33 @@ header.mainhead {
     letter-spacing: 0.1em;
 }
 
+.timeline-time {
+    text-align: left;
+    margin: 5px 0px;
+    width: 44%;
+    padding: 0px;
+    padding-top: 16px;
+    margin-left: 56%;
+    margin-top: -60px;
+    color: #333;
+    text-transform: uppercase;
+    font-family: $serif_font;
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+    padding-bottom: 0.8em;
+}
+
+.timeline .timeline-block.block-right .timeline-time {
+    margin-left: 0;
+    text-align: right;
+}
+
 .timeline .timeline-block.block-right .timeline-content {
     margin-left: 56%;
     text-align: left;
 }
 
-@media(max-width: 768px){
+@media(max-width: $container_desktop){
     .timeline::before {
         left: 20px;
         margin-left: -2px;
@@ -377,9 +399,11 @@ header.mainhead {
     }
 
     .timeline .timeline-dot {
-        left: 20px;
+        left: 0px;
+        margin: 0 auto;
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        border-radius: 50% 50% 50% 0 !important;
     }
 
     .timeline .timeline-content {

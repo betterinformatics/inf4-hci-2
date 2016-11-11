@@ -1,22 +1,37 @@
 ---
-name: Matriculation and Student Card
+name: Matriculation and Registration
 icon: id-card-o
-date: 2015-10-30
+warn: You must matriculate, which formally enrolls you at the University.
+time: Beginning 12th Sept
+date: 2015-10-01
 ---
 
-Each student needs to matriculate, which formally admits you to the University. 
+Each student needs to matriculate, which formally admits you to the University. Your **Personal Tutor**
+(PT) should arange to meet with you withing the first couple of weeks of the semester.
+
+Be aware that for some International students, failure to matriculate is a breach of Visa conditions.
+
+<hr>
+
+#### Fulfil Admissions Criteria
+
+If specified in your admissions letter, such criteria must be met to be admitted to the University.
 
 #### Register on MyEd
 
 The University's online portal, [MyEd](https://www.myed.ed.ac.uk/), includes a registration form that must be completed.
 
-#### Confirm Attendance
 
-You must confirm your attendance with your School/College. This varies by degree programme, so this information will be supplied to you.
+<div class="btn-group">
+<a class="btn btn-default" href="https://www.myed.ed.ac.uk/">
+    Log In to MyEd
+</a>
 
-#### Fulfil Admissions Criteria
-
-If specified in your admissions letter, such criteria must be met to be admitted to the University.
+<a class="btn btn-default" 
+    href="http://www.ed.ac.uk/student-systems/support-guidance/students/online-registration">
+    Registration Help
+</a>
+</div>
 
 #### Student Card
 

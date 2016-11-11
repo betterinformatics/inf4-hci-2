@@ -1,7 +1,7 @@
 ---
 name: Finding Accomodation
 icon: home
-time: Apply as soon as you have a confirmed place
+warn: Limited places available, apply early to avoid disappointment
 date: 2015-08-10
 ---
 
