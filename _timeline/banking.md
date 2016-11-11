@@ -14,7 +14,7 @@ Most students studying for more than one semester are usually able to open a ban
 
 #### Visiting Students (One Semester Only)
 
-Visits of such a short length offer a limited range of suitable banking solutions. It may be worth your time contacting banks directly that will accept your business; Bank of Scotland or Barclay Bank for instance.
+Visits of such a short length offer a limited range of suitable banking solutions. It may be worth your time contacting banks directly that will accept your business; Bank of Scotland or Barclays Bank for instance.
 
 <a type="button" class="btn btn-default" href="http://www.ed.ac.uk/students/new-students/money/banking">
 Further Information on UK Banking
