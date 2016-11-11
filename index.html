@@ -25,16 +25,19 @@ layout: default
           <img src="{{ site.baseurl }}/img/{{ card.image }}" class="timeline-image">
           {% endif %}
           <article>
-            <h1>{{ card.name }}</h1>
+            <h1>
+              {% if card.icon %}
+              <i class="fa fa-{{ card.icon }} timeline-card-icon"></i>
+              &nbsp;
+              {% endif %}
+              {{ card.name }}
+            </h1>
             {{ card.content }}
           </article>
         </div>
       </div>
 
       {% endfor %}
-
-
-
 
     </div><!-- .timeline -->
   </div>
@@ -117,8 +120,8 @@ layout: default
 </div>
 
 
-<div id="campusmap"></div>
-<script src="{{ site.baseurl }}/js/maps.js" type="text/javascript"></script>
+<!--div id="campusmap"></div>
+<script src="{{ site.baseurl }}/js/maps.js" type="text/javascript"></script-->
 
 
 <!-- Button trigger modal -->
