@@ -37,6 +37,10 @@ html, body {
     font-size: 0.8em;
     opacity: 0.6;
 }
+.vspace {
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
 
 header.mainhead {
     font-size: 1.3em;
@@ -243,6 +247,7 @@ header.mainhead {
     box-shadow:         $zshadow_1;
     color: $theme_dark_gray;
     text-align: right;
+    border-radius: 0.2em;
 
     article {
         padding: 1em 2.5em;
@@ -284,7 +289,7 @@ header.mainhead {
     }
 
     .timeline {
-        padding: 20px 30px 40px;
+        padding: 0.5em;
     }
 
     .timeline .timeline-block.block-right .timeline-content {
@@ -305,8 +310,50 @@ header.mainhead {
     }
 }
 
-@media(max-width: 375px){
-    .timeline {
-        padding: 20px 20px 40px;
+
+/** LIFTED FROM ED.AC.UK **/
+
+.discover-uni {
+    padding: 0 0 15px;
+    margin: 0;
+    font-size: 1.5em;
+    font-family: $serif_font;
+    background: #252525;
+
+    h3 {
+        padding: 20px 0 5px;
+        margin: 0;
+        font-size: 1.5em;
+        font-weight: 400;
+        color: #777;
+        text-transform: uppercase;
     }
+}
+
+.footer {
+    padding: 16px 0;
+    margin: 0;
+    font-size: 1.1em;
+    color: #ccc;
+    background: -webkit-gradient(linear,left top,left bottom,from(#333),to(#262626)) repeat scroll 0 0;
+    background: -webkit-linear-gradient(top,#333 0,#262626 100%) repeat scroll 0 0;
+    background: -o-linear-gradient(top,#333 0,#262626 100%) repeat scroll 0 0;
+    background: linear-gradient(to bottom,#333 0,#262626 100%) repeat scroll 0 0;
+    background-color: #333;
+    background-color: rgba(0,0,0,0);
+    border-top: none;
+    
+    a {
+        color: inherit;
+    }
+}
+
+.footer-copyright {
+    color: #444;
+    background: #fff;
+}
+
+.copyright {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
