@@ -65,6 +65,9 @@ html, body {
     margin-top: 2em;
     margin-bottom: 3em;
 }
+.center {
+    text-align: center;
+}
 
 .narrative-heading {
     text-align: center;
@@ -83,7 +86,15 @@ html, body {
 }
 
 .colourback {
-    background-color: lighten($theme_dark_gray, 80%);
+    background-color: #FFF;
+    padding: 0.5em 0;
+}
+
+.epoch {
+    color: $theme_pink;
+    text-transform: uppercase;
+    font-family: $serif_font;
+    font-size: 3em;
 }
 
 header.mainhead {
@@ -337,11 +348,18 @@ header.mainhead {
     margin-left: 55%;
     margin-top: -60px;
     color: #333;
+    text-transform: uppercase;
+    font-family: $serif_font;
+    letter-spacing: 0.1em;
 }
 
 .timeline .timeline-block.block-right .timeline-content {
     margin-left: 56%;
     text-align: left;
+}
+.timeline .timeline-block.block-right .timeline-time {
+    margin-left: 0;
+    text-align: right;
 }
 
 @media(max-width: 768px){
