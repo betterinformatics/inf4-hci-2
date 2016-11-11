@@ -3,35 +3,87 @@ title: Home
 layout: default
 ---
 
-{% assign cards = site.timeline | sort 'date'  %}
 
-<section id="timeline" class="vspace">
+{% assign cards_pre = site.timeline | sort 'date'  %}
+{% assign cards_ed = site.timeline_ed | sort 'date'  %}
+
+<section id="timeline_pre" class="vspace">
   <div class="container">
+
+    <div class="narrative-heading">
+      Getting to Edinburgh
+    </div>
+    
     <div class="timeline">
       <div class="timeline-line">
         <div class="timeline-complete">
         </div>
       </div>
 
-      {% for card in cards %}
+      {% for card in cards_pre %}
       
       <!-- Add class 'complete' to mark complete -->
       <div class="timeline-block {% cycle '', 'block-right' %}">
         <a class="timeline-dot" href="#">
-          <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+          
+              {% if card.icon %}
+              <i class="fa fa-{{ card.icon }} timeline-card-icon"></i>
+              {% else %}
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+              {% endif %}
         </a>
         <div class="timeline-content zshadow_1">
           {% if card.image %}
           <img src="{{ site.baseurl }}/img/{{ card.image }}" class="timeline-image">
           {% endif %}
           <article>
-            <h1>
+            <h1>{{ card.name }}            </h1>
+            {{ card.content }}
+          </article>
+        </div>
+      </div>
+
+      {% endfor %}
+
+    </div><!-- .timeline -->
+  </div>
+</section>
+
+
+<div id="campusmap"></div>
+<script src="{{ site.baseurl }}/js/maps.js" type="text/javascript"></script>
+
+<section id="timeline_ed" class="vspace">
+  <div class="container">
+
+    <div class="narrative-heading">
+      Welcome to Edinburgh
+    </div>
+    
+    <div class="timeline">
+      <div class="timeline-line">
+        <div class="timeline-complete">
+        </div>
+      </div>
+
+      {% for card in cards_ed %}
+      
+      <!-- Add class 'complete' to mark complete -->
+      <div class="timeline-block {% cycle '', 'block-right' %}">
+        <a class="timeline-dot" href="#">
+          
               {% if card.icon %}
               <i class="fa fa-{{ card.icon }} timeline-card-icon"></i>
-              &nbsp;
+              {% else %}
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
               {% endif %}
-              {{ card.name }}
-            </h1>
+        </a>
+        <div class="timeline-content zshadow_1">
+          {% if card.image %}
+          <img src="{{ site.baseurl }}/img/{{ card.image }}" class="timeline-image">
+          {% endif %}
+          <article>
+            <h1>{{ card.name }}            </h1>
             {{ card.content }}
           </article>
         </div>
@@ -118,10 +170,6 @@ layout: default
     </div>
   </div>
 </div>
-
-
-<!--div id="campusmap"></div>
-<script src="{{ site.baseurl }}/js/maps.js" type="text/javascript"></script-->
 
 
 <!-- Button trigger modal -->

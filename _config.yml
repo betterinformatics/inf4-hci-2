@@ -35,3 +35,6 @@ collections:
   timeline:
     output: false
 
+  timeline_ed:
+    output: false
+

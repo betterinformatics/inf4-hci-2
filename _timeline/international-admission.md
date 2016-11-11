@@ -1,13 +1,28 @@
 ---
-name: International Admissions
+name: International Admissions &amp; Visas
 icon: suitcase
-link: http://www.ed.ac.uk/international-office/immigration/applying-for-visa/visa-requirements
 date: 2015-05-01
 ---
 
-Students travelling to Edinburgh who aren't from the UK, EU (&amp; EEA) or Switzerland 
+Students travelling to Edinburgh who aren't from the UK, EU, EEA or Switzerland 
 may need to apply for a *student visa*.
 
-If you are a national of an EU/EEA country, or Switzerland, you do not need to apply for permission to live, work or study in the UK. 
+<div class="row">
 
-You should travel to the UK using your EU/EEA/Swiss passport or national ID card and there will be no restriction on studying.
+
+<div class="col-md-6">
+<h4>UK, EU, EEA &amp; Swiss Nationals</h4>
+You do not need to apply for permission to live, work or study in the UK. You should travel to the UK using your EU/EEA/Swiss passport or national ID card and there will be no restriction on studying.
+</div>
+
+<div class="col-md-6">
+<h4>All others</h4>
+If you are a national of a non-EU/EEA country, or Switzerland, you must seek immigration permission to come to the UK.
+<br><br>
+<a type="button" class="btn btn-default" href="http://www.ed.ac.uk/international-office/immigration">
+      Further information on Visas
+  </a>
+</div>
+
+</div>
+<br>

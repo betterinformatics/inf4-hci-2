@@ -66,6 +66,22 @@ html, body {
     margin-bottom: 3em;
 }
 
+.narrative-heading {
+    text-align: center;
+    color: $theme_dark_blue;
+    font-family: $serif_font;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.narrative-heading:before,
+.narrative-heading:after {
+    content: "—";
+    margin: 0 0.5em;
+}
+
 header.mainhead {
     color: #fff;
     font-size: 1.3em;
@@ -184,9 +200,11 @@ header.mainhead {
         vertical-align: top;
         padding: 0.25em 0;
     }
-}
-.timeline h2 {
-    color: black !important;
+
+    h2, h3, h4 {
+        font-weight: bold;
+    }
+
 }
 
 .timeline-line{
@@ -261,7 +279,6 @@ header.mainhead {
     width: 44%;
     min-height: 80px;
     color: $theme_dark_gray;
-    text-align: right;
     border-radius: 0.2em;
 
     article {
