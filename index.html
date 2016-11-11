@@ -3,5 +3,119 @@ title: Home
 layout: default
 ---
 
+{% assign cards = site.timeline | sort 'date'  %}
 
-Hello World!
+<section id="timeline">
+  <div class="container">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" 
+            data-toggle="modal" data-target="#conversationalModal">
+      Launch reload modal
+    </button>
+    <div class="timeline">
+      <div class="timeline-line">
+        <div class="timeline-complete">
+        </div>
+      </div>
+
+      {% for card in cards %}
+
+      <div class="timeline-block complete {% cycle '', 'block-right' %}">
+        <div class="timeline-dot">
+          <a href="#"><i class="fa fa-check" aria-hidden="true"></i></a>
+        </div>
+        <div class="timeline-content">
+          {% if card.image %}
+          <img src="{{ site.baseurl }}/img/{{ card.image }}" class="timeline-image">
+          {% endif %}
+          <article>
+            <h1>{{ card.name }}</h1>
+            {{ card.content }}
+          </article>
+        </div>
+      </div>
+
+      {% endfor %}
+
+
+
+
+    </div><!-- .timeline -->
+  </div>
+</section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="conversationalModal" 
+     tabindex="-1" role="dialog" aria-labelledby="conversationalModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h1 class="modal-title" id="myModalLabel">Hey There!</h1>
+      </div>
+      <div class="modal-body media-chat">
+        <!-- MODAL BODY -->
+        <div class="media">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object" 
+                   src="{{ site.baseurl }}/img/uni-avatar.png" 
+                   alt="University of Edinburgh"
+                   style="width: 64px; height: 64px;">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4>UoE</h4>
+            Since it's your first time here,
+            would you mind telling us a bit about you so
+            we can tailor content to your programme?
+          </div>
+        </div>
+        
+        <div class="media rightside"> 
+          <div class="media-body">
+            <h4>You</h4>
+            
+            I am a 
+            <label class="checkbox">
+              <input type="checkbox" value="visiting">visiting
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" value="international">international
+            </label>
+            <label class="radio">
+              <input type="radio" name="optradio">Masters (Post-Graduate)
+            </label>
+            <label class="radio">
+              <input type="radio" name="optradio">First Year (Undergraduate)
+            </label>
+            student.
+
+            <br><br>
+            <div class="muted">
+              Not sure? <a href="#">Show all information</a>
+            </div>
+          </div>
+          <div class="media-right"> 
+            <a href="#"> 
+              <img class="media-object" 
+                   src="{{ site.baseurl }}/img/user-avatar.png" 
+                   alt="University of Edinburgh"
+                   style="width: 64px; height: 64px;">
+            </a> 
+          </div> 
+        </div>
+        
+        <!-- !MODAL BODY -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Skip</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">
+          Ok, looks good &nbsp; 
+          <i class="fa fa-check-square-o" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

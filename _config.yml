@@ -1,7 +1,7 @@
 # Site Settings
 title: HCI2
 description: ""
-baseurl: ""
+baseurl: "/inf4-hci-2"
 url: ""
 author: "Angus P, Chris C, Ben S, Kerel K"
 author_avatar: ""
@@ -28,11 +28,7 @@ sass:
 
 
 # Addition content types
-# collections:
-#   projects:
-#     output: false
-#   unlisted:
-#     output: true
-#     layout: clear
-#     permalink: /unlisted/:path/
+collections:
+  timeline:
+    output: false
 

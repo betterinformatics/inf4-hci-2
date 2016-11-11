@@ -2,7 +2,11 @@
 # Front matter ensures Jekyll reads file
 ---
 
-$theme_colour: {{ site.theme_dark_blue }};
+$theme_dark_blue: {{ site.theme_dark_blue }};
+$theme_light_blue: {{ site.theme_light_blue }};
+$theme_red: {{ site.theme_red }};
+$theme_dark_gray: {{ site.theme_dark_gray }};
+$theme_success: #5cb85c;
 
 $copy_colour: #181818;
 
@@ -14,22 +18,295 @@ $container_tablet: 720px + $grid_gutter_width;
 $container_desktop: 940px + $grid_gutter_width;
 $container_large: 1140px + $grid_gutter_width;
 
+/* Material lighting cues */
+$zshadow_0: 0rem 0.1rem 0.3rem 0rem rgba(0,0,0,0.1);
+$zshadow_1: 0rem 0.2rem 0.6rem 0rem rgba(0,0,0,0.3);
+$zshadow_2: 0rem 0.6rem   2rem 0rem rgba(0,0,0,0.4);
 
-header.headercontainer {
-    padding: 1rem 3rem;
+html, body {
+    background: #e8e8e8;
+}
+
+.serif {
+    font-family: $serif_font;
+}
+.sans-serif {
+    font-family: $sans_font;
+}
+.muted {
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+
+header.mainhead {
     font-size: 1.3em;
-    height: 4em;
+    height: 3.5em;
+    display: block;
 
-    img.mainlogo {
-        height: 100%;
+    .mainlogo {
+        height: 2em;
+        padding: 0.25em;
+        display: inline-block;
     }
+
+    nav.navbar {
+        background: #FFF;
+        height: 100%;
+        border: 0;
+        border-radius: 0;
+    }
+
+    box-shadow: $zshadow_0;
 }
 
 @media (min-width: $container_tablet) {
-    header.headercontainer {
-        padding: 2rem 4rem;
+    header.mainhead {
         font-size: 1.5em;
-        height: 6em;
+        height: 6.5em;
+    
+        .mainlogo {
+            height: 5.5em;
+        }
     }
 }
 
+
+.schoolhead {
+    background: $theme_dark_blue;
+    color: #FFF;
+    padding: 1.5em;
+    
+    h1 {
+        font-family: $serif_font;
+        font-size: 2em;
+        text-transform: uppercase;
+    }
+}
+
+
+.modal-content {
+    padding: 1em 2.5em;
+}
+
+.media-chat {
+
+    .rightside {
+        text-align: right;
+    }
+    
+    .media-body {
+        h4 {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        label {
+            font-weight: normal;
+        }
+
+        padding: 1em 1.5em 1.5em 1em;
+        margin-right: 2em;
+        border-radius: 0.5em;
+        background: #EEE;
+        
+    }
+
+    .media-object {
+        border-radius: 50%;
+        -webkit-box-shadow: $zshadow_1;
+        -moz-box-shadow:    $zshadow_1;
+        box-shadow:         $zshadow_1;
+    }
+
+}
+
+
+@media (min-width: $container_tablet){
+    .modal-dialog {
+        margin: 10em auto 2em auto;
+    }
+
+    .modal-content {
+        font-size: 1.2em;
+        padding: 2em 3em;
+    }
+}
+
+
+
+.timeline {
+    position: relative;
+    margin: 10px 0px;
+    padding: 20px 0px;
+    overflow:hidden;
+}
+.timeline h2 {
+    color: black !important;
+}
+
+.timeline-line{
+    left: 50%;
+    margin-left: -3px;
+    content: '';
+    /*z-index: -1;*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    background-color: $theme_dark_blue;
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-size: cover;
+
+    .timeline-complete {
+        height: 250px;
+        background: $theme_success;
+        width: 6px;
+    }
+}
+
+.timeline-line::before{
+    position: absolute;
+    top: 0;
+    left:-7px;
+    content: '';
+    background: $theme_success;
+    border-radius: 100%;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0;    
+}
+
+.timeline-line::after{
+    position: absolute;
+    bottom: 0;
+    left:-7px;
+    content: '';
+    background: $theme_dark_blue;
+    border-radius: 100%;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0;    
+}
+
+.timeline .timeline-block {
+    padding: 1em 0.5em 0em 0.5em;
+}
+
+.timeline .timeline-dot {
+    background: #FFF;
+    width: 60px;
+    height: 60px;
+    border: 4px solid $theme_dark_blue;
+    padding: 15px;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    margin-left: -30px;
+    /* -webkit-box-shadow: $zshadow_1; */
+    /* -moz-box-shadow:    $zshadow_1; */
+    /* box-shadow:         $zshadow_1; */
+ 
+
+    input {
+        font-size: 2em;
+    }
+}
+
+.timeline .timeline-block.complete .timeline-dot {
+    border-color: $theme_success;
+}
+
+.timeline .timeline-dot .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    font-size: 2em;
+}
+
+.timeline .timeline-content {
+    position: relative;
+    margin-top: -60px;
+    background: #FFF;
+    width: 44%;
+    min-height: 80px;
+    -webkit-box-shadow: $zshadow_1;
+    -moz-box-shadow:    $zshadow_1;
+    box-shadow:         $zshadow_1;
+    color: $theme_dark_gray;
+    text-align: right;
+
+    article {
+        padding: 1em 2.5em;
+    }
+}
+
+    .timeline .timeline-content h1 {
+        margin: 0.5em 0;
+        margin-bottom: 0.6em;
+        font-size: 2em;
+    }
+
+    .timeline .timeline-content .table {
+        margin-bottom: 0px;
+    }
+
+.timeline-time {
+    text-align: left;
+    margin: 5px 0px;
+    width: 44%;
+    padding: 0px;
+    padding-top: 16px;
+    color: #AAA;
+    margin-left: 55%;
+    margin-top: -60px;
+    color: #333;
+}
+
+.timeline .timeline-block.block-right .timeline-content {
+    margin-left: 56%;
+    text-align: left;
+}
+
+@media(max-width: 768px){
+    .timeline::before {
+        left: 20px;
+        margin-left: -2px;
+        width: 4px;
+    }
+
+    .timeline {
+        padding: 20px 30px 40px;
+    }
+
+    .timeline .timeline-block.block-right .timeline-content {
+        margin-left: 0%;
+    }
+
+    .timeline .timeline-dot {
+        left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .timeline .timeline-content {
+        margin-top: 10px;
+        width: 100%;
+        min-height: 0px;
+        text-align: left;
+    }
+}
+
+@media(max-width: 375px){
+    .timeline {
+        padding: 20px 20px 40px;
+    }
+}
