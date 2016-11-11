@@ -19,8 +19,9 @@ You do not need to apply for permission to live, work or study in the UK. You sh
 <h4>All others</h4>
 If you are a national of a non-EU/EEA country, or Switzerland, you must seek immigration permission to come to the UK.
 <br><br>
-<a type="button" class="btn btn-default" href="http://www.ed.ac.uk/international-office/immigration">
-      Further information on Visas
+<a class="btn btn-default" 
+    href="http://www.ed.ac.uk/international-office/immigration">
+    Further information on Visas
   </a>
 </div>
 

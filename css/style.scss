@@ -82,6 +82,10 @@ html, body {
     margin: 0 0.5em;
 }
 
+.colourback {
+    background-color: lighten($theme_dark_gray, 80%);
+}
+
 header.mainhead {
     color: #fff;
     font-size: 1.3em;
@@ -191,7 +195,6 @@ header.mainhead {
     position: relative;
     margin: 10px 0px;
     padding: 20px 0px;
-    overflow:hidden;
 
     .timeline-card-icon {
         display: inline-block;
@@ -226,6 +229,24 @@ header.mainhead {
         background: $theme_success;
         width: 6px;
     }
+}
+
+
+.timeline-line.arrow-bottom::after {
+    position: absolute;
+    bottom: -25px;
+    left:-17px;
+    content: '';
+    background: none;
+    border: 20px solid $theme_dark_blue;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    display: inline-block;
+    height: 0;
+    width: 0;
+    margin: 0;
+    box-sizing: content-box;
 }
 
 .timeline .timeline-block {

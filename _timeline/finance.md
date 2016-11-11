@@ -1,6 +1,6 @@
 ---
-name: Finance
-icon: credit-card
+name: Banking and Living Costs
+icon: shopping-basket
 date: 2015-05-15
 ---
 

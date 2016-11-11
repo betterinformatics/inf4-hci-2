@@ -5,7 +5,8 @@ function initMap() {
 
     var campusmap = new google.maps.Map(document.getElementById('campusmap'), {
         zoom: 15,
-        center: appleton
+        center: appleton,
+        scrollwheel: false
     });
 
     var atmarker = new google.maps.Marker({
