@@ -392,9 +392,22 @@ header.mainhead {
 
     .timeline {
 
+        padding-left: 0;
+        padding-right: 0;
         
         .timeline-line{
             left: 3.5em;
+        }
+
+        .timeline-content article {
+            padding: 0.8em 1.5em 1em 1.5em;
+        }
+
+        .timeline-block .timeline-time {
+            margin-left: 0;
+            width: 100%;
+            text-align: right;
+            padding-left: 8rem;
         }
 
     }
@@ -404,7 +417,7 @@ header.mainhead {
     }
 
     .timeline .timeline-dot {
-        left: 3.1em;
+        left: 4.2rem;
         margin-top: 10px;
         margin-bottom: 20px;
         border-radius: 50% 50% 50% 0 !important;
