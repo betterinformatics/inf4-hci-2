@@ -1,7 +1,7 @@
 ---
 name: International Admissions &amp; Visas
 icon: suitcase
-date: 2015-05-01
+date: 2015-04-15
 ---
 
 Students travelling to Edinburgh who aren't from the UK, EU, EEA or Switzerland 
@@ -21,7 +21,7 @@ If you are a national of a non-EU/EEA country, or Switzerland, you must seek imm
 <br><br>
 <a class="btn btn-default" 
     href="http://www.ed.ac.uk/international-office/immigration">
-    Further information on Visas
+    University Immigration Guide
   </a>
 </div>
 

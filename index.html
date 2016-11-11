@@ -32,15 +32,17 @@ layout: default
               <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
               {% endif %}
         </a>
-        {% if card.time %}
-        <h2 class="timeline-time">{{ card.time }}</h2>
-        {% endif %}
         <div class="timeline-content zshadow_1">
           {% if card.image %}
           <img src="{{ site.baseurl }}/img/{{ card.image }}" class="timeline-image">
           {% endif %}
           <article>
             <h1>{{ card.name }}</h1>
+
+            {% if card.time %}
+            <div class="timeline-time">{{ card.time }}</div>
+            {% endif %}
+
             {{ card.content }}
           </article>
         </div>
@@ -87,15 +89,17 @@ layout: default
               <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
               {% endif %}
         </a>
-        {% if card.time %}
-        <div class="timeline-time">{{ card.time }}</div>
-        {% endif %}
         <div class="timeline-content zshadow_1">
           {% if card.image %}
           <img src="{{ site.baseurl }}/img/{{ card.image }}" class="timeline-image">
           {% endif %}
           <article>
             <h1>{{ card.name }}            </h1>
+            
+            {% if card.time %}
+            <div class="timeline-time">{{ card.time }}</div>
+            {% endif %}
+        
             {{ card.content }}
           </article>
         </div>

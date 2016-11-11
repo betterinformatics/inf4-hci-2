@@ -1,7 +1,8 @@
 ---
 name: Finding Accomodation
 icon: home
-date: 2015-10-10
+time: Apply as soon as you have a confirmed place
+date: 2015-08-10
 ---
 
 Accomodation applications are handled separately from admissions; You'll have to decide on 
@@ -11,7 +12,7 @@ whether you wish to apply for the University's *Halls of Residence* or find acco
 
 Both *catered* accomodation at **Pollock Halls** and *self catered* flats around the city.
 
-<div class="btn-group" role="group" aria-label="...">
+<div class="btn-group">
   <a class="btn btn-default" href="http://www.accom.ed.ac.uk/for-students/ready-to-apply/">
     Apply
   </a>
@@ -24,4 +25,18 @@ Both *catered* accomodation at **Pollock Halls** and *self catered* flats around
     Available Accomodation
   </a>
 </div>
+
+<hr>
+
+#### Private Housing
+
+It is normal for students to rent on the public property market after their first year, though 
+it is fine top do this in your first year too. 
+
+Most Students try and live close to Central campus, in Marchmont, Newington, Bruntsfield and Tollcross.
+
+<a href="http://www.ed.ac.uk/students/new-students/accommodation/renting-private-housing"
+  class="btn btn-default">
+  University Guide on Private Housing
+</a>
 

@@ -1,7 +1,7 @@
 ---
 name: Tuition Fees
-icon: credit-card
-date: 2015-05-10
+icon: graduation-cap
+date: 2015-05-01
 ---
 
 How much you pay for tuition depends on the level of study and where you are from.
@@ -9,8 +9,29 @@ How much you pay for tuition depends on the level of study and where you are fro
 Scottish and EU students can expect to pay no tuition fees; Rates for other students
 will vary.
 
+<div class="btn-group">
 <a href="http://www.ed.ac.uk/student-funding/tuition-fees/fee-status" 
     class="btn btn-default">
     Check your fee status
 </a>
+    
+<a class="btn btn-default" href="http://www.ed.ac.uk/studying/undergraduate/fees-finance">
+    Fees &amp; Finance Guide
+  </a>
+</div>
 
+
+<hr>
+
+For some students, tuition fee loans and/or grants may be available. It is important that
+you **apply for these in good time** if you will need the funds before the semester begins.
+
+<div class="btn-group">
+  <a class="btn btn-default" href="https://www.saas.gov.uk/">
+    SAAS (Scottish Students)
+  </a>
+  
+  <a class="btn btn-default" href="https://www.gov.uk/student-finance-register-login">
+    Student Finance England
+  </a>
+</div>

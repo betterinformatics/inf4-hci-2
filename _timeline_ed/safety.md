@@ -1,7 +1,6 @@
 ---
 name: Personal Safety and Responsibility
 icon: thumbs-o-up
-time: By Week 1
 date: 2015-10-20
 ---
 

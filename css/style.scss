@@ -239,6 +239,7 @@ header.mainhead {
         height: 0px;
         background: $theme_success;
         width: 6px;
+        transition: height 1s ease;
     }
 }
 
@@ -277,7 +278,7 @@ header.mainhead {
     font-size: 0.8em;
     text-align: center;
     line-height: 18px;
-    border-radius: 50%;
+    border-radius: 0 50% 50% 50%;
     position: relative;
     left: 50%;
     margin-left: -30px;
@@ -285,6 +286,14 @@ header.mainhead {
     /* -moz-box-shadow:    $zshadow_1; */
     /* box-shadow:         $zshadow_1; */
     transition: border-color 0.3s ease;
+
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.timeline .timeline-block.block-right .timeline-dot {
+    border-radius: 50% 50% 0 50%;
 }
 
 .timeline .timeline-block.complete .timeline-dot,
@@ -300,9 +309,9 @@ header.mainhead {
     position: absolute;
     top: 50%;
     left: 50%; 
-    -webkit-transform: translateY(-50%) translateX(-50%);
-    -moz-transform: translateY(-50%) translateX(-50%);
-    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg);
+    -moz-transform: translateY(-50%) translateX(-50%) rotate(45deg);
+    transform: translateY(-50%) translateX(-50%) rotate(45deg);
     font-size: 2em;
 }
 
@@ -316,7 +325,7 @@ header.mainhead {
     border-radius: 0.2em;
 
     article {
-        padding: 1em 2.5em;
+        padding: 1em 2.5em 2em 2.5em;
     }
     
     h1 {
@@ -332,6 +341,7 @@ header.mainhead {
 
 .timeline .timeline-block.complete .timeline-content {
     color: lighten($theme_dark_gray, 30%);
+    opacity: 0.6;
 
     h1 {
         text-decoration: line-through;
@@ -339,15 +349,8 @@ header.mainhead {
 }
 
 .timeline-time {
-    text-align: left;
-    margin: 5px 0px;
-    width: 44%;
-    padding: 0px;
-    padding-top: 16px;
-    color: #AAA;
-    margin-left: 55%;
-    margin-top: -60px;
-    color: #333;
+    padding: 0.5em 0 1.5em 0;
+    color: $theme_red;
     text-transform: uppercase;
     font-family: $serif_font;
     letter-spacing: 0.1em;
@@ -356,10 +359,6 @@ header.mainhead {
 .timeline .timeline-block.block-right .timeline-content {
     margin-left: 56%;
     text-align: left;
-}
-.timeline .timeline-block.block-right .timeline-time {
-    margin-left: 0;
-    text-align: right;
 }
 
 @media(max-width: 768px){
