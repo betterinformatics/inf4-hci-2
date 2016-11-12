@@ -1,6 +1,6 @@
 ---
 name: Tuition Fees
-icon: graduation-cap
+icon: gbp
 date: 2015-05-01
 ---
 

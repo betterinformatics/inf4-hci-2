@@ -1,6 +1,6 @@
 ---
 name: International Admissions &amp; Visas
-icon: suitcase
+icon: id-card
 date: 2015-04-15
 ---
 

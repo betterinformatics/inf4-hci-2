@@ -1,6 +1,6 @@
 ---
 name: Social and Events
-icon: calendar-o
+icon: calendar-check-o
 date: 2015-10-18
 time: 12th to 19th Sept
 image: whats-on.png

@@ -1,6 +1,6 @@
 ---
 name: Finding Accomodation
-icon: home
+icon: bed
 warn: Limited places available, apply early to avoid disappointment
 date: 2015-08-10
 ---

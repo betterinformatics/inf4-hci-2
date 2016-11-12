@@ -76,6 +76,10 @@ html, body {
 .padder {
     padding: 1em 2em;
 }
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
 
 .flex-container {
     height: 90%;
@@ -93,6 +97,12 @@ html, body {
     background-size: cover;
     background-position: center center;
     max-height: 50em;
+}
+
+.map-hero {
+    background-image: url("{{ site.baseurl }}/img/map-edge.png");
+    background-size: cover;
+    background-position: left center;
 }
 
 .persist-nav {

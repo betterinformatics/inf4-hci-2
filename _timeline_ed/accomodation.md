@@ -1,6 +1,6 @@
 ---
 name: Checking in to accomodation
-icon: home
+icon: bed
 date: 2015-10-10
 time: Beginning 12th Sept
 ---
