@@ -24,6 +24,41 @@ $zshadow_0: 0rem 0.1rem 0.3rem 0rem rgba(0,0,0,0.1);
 $zshadow_1: 0rem 0.2rem 0.6rem 0rem rgba(0,0,0,0.3);
 $zshadow_2: 0rem 0.6rem   2rem 0rem rgba(0,0,0,0.4);
 
+
+
+@media print {
+    html, body {
+        color: #000!important;
+        font-size: 10pt;
+    }
+}
+
+::selection {
+    background: lighten($theme_pink, 20%);
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+    max-width: 1rem;
+    height: 1rem;
+    max-height: 1rem;
+}
+::-webkit-scrollbar-track{
+    background: #fff;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $theme_light_blue;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background-color: $theme_light_blue;
+}
+
+*:focus {
+    outline: 0;
+}
+
+
 .zshadow_0, .zshadow_1, .zshadow_2 {
     transition: box-shadow 0.5s ease,
     -webkit-box-shadow 0.5s ease,

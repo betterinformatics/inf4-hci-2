@@ -26,4 +26,10 @@ If you are a national of a non-EU/EEA country, or Switzerland, you must seek imm
 </div>
 
 </div>
+
 <br>
+Remember students are required to speak English to the minimum level required to pass
+an *IELTS* exam.
+{: .muted}
+
+

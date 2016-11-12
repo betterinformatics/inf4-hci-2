@@ -5,9 +5,10 @@ date: 2015-05-01
 ---
 
 How much you pay for tuition depends on the level of study and where you are from.
+If you do have to pay fees, they must be paid *in advance* of fully matriculating.
 
 Scottish and EU students can expect to pay no tuition fees; Rates for other students
-will vary.
+(Including the rest of the UK) will vary.
 
 <div class="btn-group">
 <a href="http://www.ed.ac.uk/student-funding/tuition-fees/fee-status" 

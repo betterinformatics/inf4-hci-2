@@ -27,7 +27,27 @@ Informatics Computing Support
 
 ---
 
-<h4>WiFi & Internet &nbsp; <i class="fa fa-wifi muted"></i></h4>
+<h4>Email and Productivity &nbsp; <i class="fa fa-briefcase muted"></i></h4>
+
+The University's mail service (*Outlook*) is provided by Microsoft Office 365, 
+which includes an Online Office suite.
+
+<div class="btn-group">
+<a class="btn btn-default" 
+href="https://www.office365.ed.ac.uk/">
+    Outlook Web Email
+</a>
+
+<a class="btn btn-default" 
+href="http://www.ed.ac.uk/information-services/computing/comms-and-collab/office365">
+    Office 365 Help
+</a>
+
+</div>
+
+---
+
+<h4>WiFi and Internet &nbsp; <i class="fa fa-wifi muted"></i></h4>
 
 **Eduroam and Central**
 
@@ -36,13 +56,10 @@ werb serviced on campus. It's part of an international educational network, mean
 once you're set up on it you will be able to access the internet at thousands of
 Academic locations worldwide. The network is also more secure and resilient than *Central*
 
-<div class="btn-group">
 <a class="btn btn-default" 
 href="http://www.ed.ac.uk/information-services/computing/desktop-personal/wireless-networking/wlan-using">
     Uni guide on using the Network
 </a>
-
-</div>
 <br>
 
 
@@ -61,6 +78,18 @@ when you arrive.
     <a href="http://www.ed.ac.uk/information-services/about/news/get-connected-sessions-for-new-students"
     class="btn btn-sm btn-info">
     Get Connected Sessions
+    </a>
+</div>
+
+---
+
+<div class="alert alert-success">
+    <i class="fa fa-lock"></i> <strong>Safety &amp; Security:</strong>
+    Informatics also host a <strong>VPN</strong> service for Staff &amp; Students.
+    <br><br>
+    <a href="http://computing.help.inf.ed.ac.uk/openvpn"
+    class="btn btn-sm btn-success">
+    Informatics OpenVPN
     </a>
 </div>
 
