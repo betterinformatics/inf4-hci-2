@@ -13,11 +13,14 @@ class="btn btn-default">
 </a>
 
 Popular supermarkets are *Lidl*, *Tesco*, *Sainsbury's* and *ScotMid / The Co-op*.
-Those in self catered accomodation will need to buy food at one of these.
+Those in self catered accomodation will need to buy food at one of these. The 
+Student's Union (*EUSA*) has a hanful of shops and caf&eacute;s on campus too.
 
 <div class="alert alert-info">
     <i class="fa fa-star"></i> <strong>Protip:</strong>
     Buying in bulk and sharing meals with flatmates can reduce your cost of living.
+    Getting a <em>NUS Extra</em> card will get you a Student discount at many retailers.
+    (Some may accept a Matriculation Card)
 </div>
 
 ---
