@@ -26,6 +26,10 @@ $zshadow_2: 0rem 0.6rem   2rem 0rem rgba(0,0,0,0.4);
 
 
 
+html, body {
+    min-width: 380px;
+}
+
 @media print {
     html, body {
         color: #000!important;
@@ -131,7 +135,7 @@ html, body {
     background-image: url("{{ site.baseurl }}/img/uni-hero.png");
     background-size: cover;
     background-position: center center;
-    max-height: 50em;
+    height: 48em;
 }
 
 .map-hero {
