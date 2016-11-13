@@ -125,7 +125,6 @@ html, body {
     padding-right:0;
     padding-left:0;
 }
-
 .flex-container {
     height: 90%;
     display: -webkit-flex;
@@ -138,6 +137,7 @@ html, body {
 
 .hero-wrap {
     height: 100%;
+    background-color: #002e5f;
     background-image: url("{{ site.baseurl }}/img/uni-hero.png");
     background-size: cover;
     background-position: center center;
