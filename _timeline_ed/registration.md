@@ -3,7 +3,7 @@ name: Matriculation and Registration
 icon: id-card-o
 warn: You must matriculate, which formally enrolls you at the University.
 time: Beginning 12th Sept
-date: 2015-10-01
+date: 2015-10-15
 ---
 
 Each student needs to matriculate, which formally admits you to the University. Your **Personal Tutor**

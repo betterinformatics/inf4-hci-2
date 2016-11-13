@@ -1,7 +1,7 @@
 ---
 name: Introductory Events & Socials
 icon: calendar-check-o
-date: 2015-10-18
+date: 2015-10-12
 time: 12th to 19th Sept
 ---
 
