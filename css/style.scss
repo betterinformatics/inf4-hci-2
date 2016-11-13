@@ -480,7 +480,6 @@ header.mainhead {
         padding: 1em 2.5em 2em 2.5em;
         transition: max-height 1.0s ease,
         padding 1.0s ease;
-        max-height: auto;
     }
     
     h1 {
@@ -498,6 +497,7 @@ header.mainhead {
 .timeline .timeline-block.complete .timeline-content {
     color: lighten($theme_dark_gray, 30%);
     opacity: 0.5;
+    
 
     article {
         /*

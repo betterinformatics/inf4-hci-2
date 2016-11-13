@@ -3,12 +3,13 @@ name: Studies
 icon: laptop
 date: 2015-10-29
 time: Beginning 20th Sept
-image: campus-maps-central.png
 ---
 
-<span class="text-danger">
-TODO: Interactive or better map
-</span>
+
+<!--
+image: campus-maps-central.png
+-->
+
 
 #### Facilities
 
@@ -16,9 +17,10 @@ The *Undergraduate* and *Taught Master's Student* labs are in **Appleton Tower**
 which is close to George Square within the Central Campus. These computing labs
 are open **24/7**, with a Student Card being required to enter before 8am, after 5pm and on weekends.
 
-<a href="http://www.ed.ac.uk/maps"
-class="btn btn-default">
-Campus Maps
+<a href="http://www.ed.ac.uk/maps/maps"
+class="btn btn-info">
+<i class="fa fa-map-o"></i>&nbsp;
+Campus Maps (Interactive)
 </a>
 
 <span class="muted" markdown>

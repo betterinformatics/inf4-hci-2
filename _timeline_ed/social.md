@@ -3,8 +3,12 @@ name: Social and Events
 icon: calendar-check-o
 date: 2015-10-18
 time: 12th to 19th Sept
-image: whats-on.png
 ---
+
+<!-- 
+Were using image in Front Matter
+image: whats-on.png 
+-->
 
 As a student at *The University of Edinburgh* you're automatically of [**EUSA**](https://www.eusa.ed.ac.uk), the
 student's union. Attending Fresher's week is not mandatory though the vast majority

@@ -23,7 +23,6 @@ $(document).ready(function() {
 $(function() {
     $(".clickable").click(function() {
         var parent_block = $(this).parent(".timeline-block");
-        var complete_bar = $(this).parent(".timeline-complete");
         parent_block.toggleClass("complete");
         
         return false; // Suppress default behaviour
