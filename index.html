@@ -7,54 +7,87 @@ layout: default
 {% assign cards_pre = site.timeline | sort 'date'  %}
 {% assign cards_ed = site.timeline_ed | sort 'date'  %}
 
+
 <section id="timeline_pre" class="vspace">
-  <div class="container">
+  <div class="container-fluid">
 
-    <div class="narrative-heading">
-      Leaving for Edinburgh
-    </div>
-    
-    <div class="timeline">
-      <div class="timeline-line arrow-bottom">
-        <div class="timeline-complete"  id="timelineOne">
+
+
+    <div class="row">
+
+      <div class="col-lg-8 col-lg-offset-2">
+
+
+        <div class="narrative-heading">
+          Leaving for Edinburgh
         </div>
-      </div>
+        
+        <div class="timeline">
+          <div class="timeline-line arrow-bottom">
+            <div class="timeline-complete"  id="timelineOne">
+            </div>
+          </div>
 
-      {% for card in cards_pre %}
-      
-      <!-- Add class 'complete' to mark complete -->
-      <div class="timeline-block {% cycle '', 'block-right' %}">
-        <a class="timeline-dot clickable" href="#">
+          {% for card in cards_pre %}
           
+          <!-- Add class 'complete' to mark complete -->
+          <div class="timeline-block {% cycle '', 'block-right' %}">
+            <a class="timeline-dot clickable" href="#">
+              
               {% if card.icon %}
               <i class="fa fa-{{ card.icon }} timeline-card-icon"></i>
               {% else %}
               <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
               {% endif %}
-        </a>
-        <div class="timeline-content zshadow_1">
-          {% if card.image %}
-          <img src="{{ site.baseurl }}/img/{{ card.image }}" class="img-responsive">
-          {% endif %}
-          <h1>{{ card.name }}</h1>
-          <article>
+            </a>
+            <div class="timeline-content zshadow_1">
+              {% if card.image %}
+              <img src="{{ site.baseurl }}/img/{{ card.image }}" class="img-responsive">
+              {% endif %}
+              <h1>{{ card.name }}</h1>
+              <article>
 
-            {% if card.warn %}
-            <div class="timeline-warn">{{ card.warn }}</div>
-            {% endif %}
+                {% if card.warn %}
+                <div class="timeline-warn">{{ card.warn }}</div>
+                {% endif %}
 
-            {{ card.content }}
-          </article>
-        </div>
+                {{ card.content }}
+              </article>
+            </div>
+          </div>
+
+          {% endfor %}
+
+        </div><!-- .timeline -->
+
+
       </div>
+      <div class="col-lg-2">
 
-      {% endfor %}
+        <nav id="t1Affix" class="scrollSpyNav visible-xl bs-docs-sidebar visible-lg">
+          <h4>Quick Navigation</h4>
+          <ul class="nav bs-docs-sidenav">
+            {% for card in cards_pre %}
+            <li class="">
+              <a href="#">
+                {{ card.name }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
 
-    </div><!-- .timeline -->
+
+
+      </div>
+    </div>
   </div>
 </section>
 
-<div class="vspace container-fluid">
+
+
+
+<div class="vspace container-fluid" id="mapHero">
 
   <div class="row no-gutter map-hero">
 
