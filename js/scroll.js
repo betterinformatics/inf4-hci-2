@@ -10,11 +10,11 @@ $('a').click(function(){
 
 /* Scroll to top show/hide: */
 $(document).ready(function() {
-	// Animate scroll to top
-	$('#go-top').click(function(){
-		$('html, body').animate({scrollTop : 0},800);
-		return false;
-	});
+    // Animate scroll to top
+    $('#go-top').click(function(){
+	$('html, body').animate({scrollTop : 0},800);
+	return false;
+    });
 });
 
 
@@ -31,7 +31,8 @@ $(function() {
 
 
 /* Timleine scrollspy */
-$(document).ready(function() {
+
+var affixers = function() {
     $('#t1Affix').affix({
         offset: {
             top: 660,
@@ -46,14 +47,22 @@ $(document).ready(function() {
     $('#t2Affix').affix({
         offset: {
             top: function () {
-                return (this.top = $('#mapHero').offset().top)
+                var hero = $('#mapHero');
+                return (this.top = hero.offset().top + hero.outerHeight(true) - 40)
             },
             bottom: function () {
                 return (this.bottom = $('#footer').outerHeight(true))
             }
         }
     });
-});
+
+    $('body').scrollspy({ target: '#t1Affix' });
+    $('body').scrollspy({ target: '#t2Affix' });
+};
+
+
+$(document).ready(affixers);
+$(window).resize(affixers);
 
 /* Scroll around based on keyboard presses */
 

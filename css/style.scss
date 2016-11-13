@@ -315,6 +315,14 @@ header.mainhead {
     margin: 10px 0px;
     padding: 5em 0.5em;
 
+    white-space: normal;
+    word-wrap: break-word;
+
+    .btn {
+        white-space: normal;
+        word-wrap: break-word;   
+    }
+
     .timeline-card-icon {
         display: inline-block;
         opacity: 0.5;
@@ -479,6 +487,7 @@ header.mainhead {
     article {
         padding: 1em 2.5em 2em 2.5em;
         /* transition: font-size 0.3s ease; */
+        overflow: hidden;
     }
     
     h1 {
@@ -494,15 +503,14 @@ header.mainhead {
 }
 
 .timeline .timeline-block.complete .timeline-content {
-    color: lighten($theme_dark_gray, 30%);
-    opacity: 0.5;
+    color: lighten($theme_dark_gray, 20%);
+    opacity: 0.4;
 
     article {
         /*
         padding-bottom: 0;
         max-height: 0;
         */
-        overflow: hidden;
     }
 
     h1 {
@@ -579,6 +587,7 @@ header.mainhead {
 
     .timeline .timeline-block.complete .timeline-content {
         opacity: 1;
+        color: lighten($theme_dark_gray, 50%);
     }
 
     .timeline .timeline-dot {
@@ -667,12 +676,17 @@ footer {
 .scrollSpyNav {
     position: absolute;
     padding: 1em 1.5em;
+    max-width: 263px;
+
+    h4 {
+        margin-left: 1em;
+    }
 }
 
 
 .scrollSpyNav.affix {
     position: fixed;
-    top: 1em;;
+    top: 1em;
 }
 
 
@@ -703,19 +717,19 @@ footer {
 .bs-docs-sidebar .nav > li > a:hover,
 .bs-docs-sidebar .nav > li > a:focus {
   padding-left: 19px;
-  color:  $theme_pink;
+  color:  $theme_light_blue;
   text-decoration: none;
   background-color: transparent;
-  border-left: 1px solid $theme_pink;
+  border-left: 1px solid $theme_light_blue;
 }
 .bs-docs-sidebar .nav > .active > a,
 .bs-docs-sidebar .nav > .active:hover > a,
 .bs-docs-sidebar .nav > .active:focus > a {
   padding-left: 18px;
   font-weight: bold;
-  color: $theme_pink;
+  color: $theme_light_blue;
   background-color: transparent;
-  border-left: 2px solid $theme_pink;
+  border-left: 2px solid $theme_light_blue;
 }
 
 /* Nav: second level (shown on .active) */
@@ -754,7 +768,7 @@ footer {
 }
 .back-to-top:hover,
 .bs-docs-theme-toggle:hover {
-  color: #563d7c;
+  color: $theme_light_blue;
   text-decoration: none;
 }
 .bs-docs-theme-toggle {
@@ -774,10 +788,6 @@ footer {
     display: block;
   }
   /* Widen the fixed sidebar */
-  .bs-docs-sidebar.affix,
-  .bs-docs-sidebar.affix-bottom {
-    width: 213px;
-  }
   .bs-docs-sidebar.affix {
     position: fixed; /* Undo the static from mobile first approach */
     top: 20px;
@@ -789,13 +799,6 @@ footer {
   .bs-docs-sidebar.affix .bs-docs-sidenav {
     margin-top: 0;
     margin-bottom: 0;
-  }
-}
-@media (min-width: 1200px) {
-  /* Widen the fixed sidebar again */
-  .bs-docs-sidebar.affix-bottom,
-  .bs-docs-sidebar.affix {
-    width: 263px;
   }
 }
 

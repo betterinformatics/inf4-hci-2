@@ -22,7 +22,7 @@ layout: default
           Leaving for Edinburgh
         </div>
         
-        <div class="timeline">
+        <div class="timeline"  data-target="#t1Affix">
           <div class="timeline-line arrow-bottom">
             <div class="timeline-complete"  id="timelineOne">
             </div>
@@ -30,8 +30,10 @@ layout: default
 
           {% for card in cards_pre %}
           
+          <a name="{{ card.name | url_encode }}"></a>
+
           <!-- Add class 'complete' to mark complete -->
-          <div class="timeline-block {% cycle '', 'block-right' %}">
+          <div class="timeline-block {% cycle '', 'block-right' %}" id="{{ card.date | url_encode }}">
             <a class="timeline-dot clickable" href="#">
               
               {% if card.icon %}
@@ -69,7 +71,7 @@ layout: default
           <ul class="nav bs-docs-sidenav">
             {% for card in cards_pre %}
             <li class="">
-              <a href="#">
+              <a href="#{{ card.name | url_encode }}">
                 {{ card.name }}
               </a>
             </li>
@@ -144,62 +146,94 @@ layout: default
 
 
 <section id="timeline_ed" class="vspace">
-  <div class="container">
+  <div class="container-fluid">
 
-    <div class="narrative-heading">
-      Semester Begins, 10<small>th</small> Sept
-    </div>
-    
-    <div class="timeline">
-      <div class="timeline-line">
-        <div class="timeline-complete" id="timelineTwo">
+
+
+    <div class="row">
+
+      <div class="col-lg-8 col-lg-offset-2">
+
+
+        <div class="narrative-heading">
+          Semester Begins, 10<small>th</small> Sept
         </div>
-      </div>
-      
-      <!-- {% cycle '', 'block-right' %} -->
-      {% for card in cards_ed %}
-      
-      <!-- Add class 'complete' to mark complete -->
-      <div class="timeline-block {% cycle '', 'block-right' %}">
-        <a class="timeline-dot clickable" href="#">
+        
+        <div class="timeline">
+          <div class="timeline-line">
+            <div class="timeline-complete" id="timelineTwo">
+            </div>
+          </div>
           
+          <!-- {% cycle '', 'block-right' %} -->
+          {% for card in cards_ed %}
+          <a name="{{ card.name | url_encode }}"></a>
+          
+          <!-- Add class 'complete' to mark complete -->
+          <div class="timeline-block {% cycle '', 'block-right' %}">
+            <a class="timeline-dot clickable" href="#">
+              
               {% if card.icon %}
               <i class="fa fa-{{ card.icon }} timeline-card-icon"></i>
               {% else %}
               <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
               {% endif %}
-        </a>
-        {% if card.time %}
-        <div class="timeline-time">{{ card.time }}</div>
-        {% endif %}
-        <div class="timeline-content zshadow_1">
-          {% if card.image %}
-          <img src="{{ site.baseurl }}/img/{{ card.image }}" class="img-responsive">
-          {% endif %}
-          
-          <h1>{{ card.name }}</h1>
-          
-          <article>
-            {% if card.warn %}
-            <div class="timeline-warn">{{ card.warn }}</div>
+            </a>
+            {% if card.time %}
+            <div class="timeline-time">{{ card.time }}</div>
             {% endif %}
-        
-            {{ card.content }}
-          </article>
+            <div class="timeline-content zshadow_1">
+              {% if card.image %}
+              <img src="{{ site.baseurl }}/img/{{ card.image }}" class="img-responsive">
+              {% endif %}
+              
+              <h1>{{ card.name }}</h1>
+              
+              <article>
+                {% if card.warn %}
+                <div class="timeline-warn">{{ card.warn }}</div>
+                {% endif %}
+                
+                {{ card.content }}
+              </article>
+            </div>
+          </div>
+
+          {% endfor %}
+
         </div>
+        <br>
+        <div class="narrative-heading">
+          Semester 1 Ends 21st December
+        </div>
+        <div class="narrative-heading muted">
+          (Semester 2 runs from 11th Jan to 26 May 2017)
+        </div><!-- .timeline -->
+
+        
       </div>
 
-      {% endfor %}
+      <div class="col-lg-2">
 
-    </div><!-- .timeline -->
-    <br>
-    <div class="narrative-heading">
-      Semester 1 Ends 21st December
+        <nav id="t2Affix" class="scrollSpyNav visible-xl bs-docs-sidebar visible-lg">
+          <h4>Quick Navigation</h4>
+          <ul class="nav bs-docs-sidenav">
+            {% for card in cards_ed %}
+            <li class="">
+              <a href="#{{ card.name | url_encode }}">
+                {{ card.name }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
+
+      </div>
     </div>
-    <div class="narrative-heading muted">
-      (Semester 2 runs from 11th Jan to 26 May 2017)
-    </div>
+
   </div>
+</div>
+
 </section>
 
 
