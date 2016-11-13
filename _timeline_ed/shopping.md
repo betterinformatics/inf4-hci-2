@@ -1,7 +1,7 @@
 ---
 name: Shopping
 icon: shopping-cart
-date: 2015-10-19
+date: 2015-10-28
 ---
 
 There are a number of Cafes and lounge spaces on Campus, as well as

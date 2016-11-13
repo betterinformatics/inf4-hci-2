@@ -13,5 +13,6 @@ class="btn btn-default">
     Arrival Information for Halls of Residence
 </a>
 
-All Halls have some paid laundry facility, the specifics may vary.
+On arrival you'll be given your *Arrival Pack* wich'll guide you through the tasks you must 
+complete during Fresher's Week.
 

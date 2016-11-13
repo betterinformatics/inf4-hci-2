@@ -1,7 +1,7 @@
 ---
 name: Get Connected & Setup
 icon: wifi
-date: 2015-10-28
+date: 2015-10-19
 ---
 
 All students at the university may use *Open Access* computers, found in the Library and
@@ -40,7 +40,7 @@ href="https://www.office365.ed.ac.uk/">
 
 <a class="btn btn-default" 
 href="http://www.ed.ac.uk/information-services/computing/comms-and-collab/office365">
-    Office 365 Help
+    Office 365 Info
 </a>
 
 </div>
@@ -85,11 +85,17 @@ when you arrive.
 
 <div class="alert alert-success">
     <i class="fa fa-lock"></i> <strong>Safety &amp; Security:</strong>
-    Informatics also host a <strong>VPN</strong> service for Staff &amp; Students.
+    The Uni publishes Information security guides; Services such as the Informatics OpenVPN also
+    exist.
     <br><br>
-    <a href="http://computing.help.inf.ed.ac.uk/openvpn"
-    class="btn btn-sm btn-success">
-    Informatics OpenVPN
-    </a>
+    <div class="btn-group">
+        <a href="www.ed.ac.uk/infosec"
+        class="btn btn-sm btn-success">
+            Information Security Guides
+        </a>
+        <a href="http://computing.help.inf.ed.ac.uk/openvpn"
+        class="btn btn-sm btn-success">
+            Informatics OpenVPN
+        </a>
+    </div>
 </div>
-

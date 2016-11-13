@@ -1,7 +1,7 @@
 ---
 name: Transport around Edinburgh
 icon: bus
-date: 2015-10-29
+date: 2015-10-25
 ---
 
 For travelling to and from the **King's Buildings** Campus the University offers a free shuttle bus.

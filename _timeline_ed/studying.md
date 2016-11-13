@@ -1,7 +1,7 @@
 ---
 name: Studies
 icon: laptop
-date: 2015-10-29
+date: 2015-10-21
 time: Beginning 20th Sept
 ---
 

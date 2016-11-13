@@ -39,7 +39,7 @@ html, body {
 }
 
 ::selection {
-    background: lighten($theme_pink, 20%);
+    background: #000;
     color: #fff;
 }
 
@@ -497,7 +497,6 @@ header.mainhead {
 .timeline .timeline-block.complete .timeline-content {
     color: lighten($theme_dark_gray, 30%);
     opacity: 0.5;
-    
 
     article {
         /*
@@ -577,6 +576,10 @@ header.mainhead {
 
     .timeline .timeline-block.block-right .timeline-content {
         margin-left: 0%;
+    }
+
+    .timeline .timeline-block.complete .timeline-content {
+        opacity: 1;
     }
 
     .timeline .timeline-dot {
