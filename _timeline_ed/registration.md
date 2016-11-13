@@ -7,7 +7,7 @@ date: 2015-10-15
 ---
 
 Each student needs to matriculate, which formally admits you to the University. Your **Personal Tutor**
-(PT) should arange to meet with you withing the first couple of weeks of the semester.
+(PT) should arange to meet with you within the first couple of weeks of the semester.
 
 Be aware that for some International students, failure to matriculate is a breach of Visa conditions.
 

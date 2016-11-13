@@ -4,8 +4,8 @@ icon: location-arrow
 date: 2015-10-10
 ---
 
-The City of Edinburgh is generally well connected, with rail air and road links to the rest 
-of the UK and world.
+The City of Edinburgh is generally well connected, with rail, air and road links to the rest 
+of the UK and the world.
 
 <div class="alert alert-info">
     <i class="fa fa-star"></i> <strong>Protip:</strong>
@@ -27,7 +27,7 @@ The *Airlink 100* and *Edinburgh Trams* connect the airport and city centre with
 <hr>
 <h4>Rail &nbsp;<i class="fa fa-train muted"></i></h4>
 
-The city's main station, Edinburgh Waverley, connects the majority of Scotland with the capital. There are daily services connecting the city with major English cities such as London, Birmingham, Manchester and Bristol.
+The city's main station, Edinburgh Waverley, connects the majority of Scotland with the capital. There are also daily services connecting Edinburgh with major English cities such as London, Birmingham, Manchester and Bristol.
 
 <div class="btn-group">
 <a class="btn btn-default" 

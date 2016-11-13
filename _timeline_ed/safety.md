@@ -40,4 +40,4 @@ Keep your valuables out of sight and make sure that your doors and windows are l
 
 **Moving Around the City**
 
-Don't walk home at night. Make sure that you plan ahead and try to stay with friends. Be sure to keep aware of your surroundings. Black cabs are a safe mode of transport for getting you home, especially if you do not know the area. 
+Try not to  walk home at night alone. Make sure that you plan ahead and try to stay with your friends. Be sure to keep aware of your surroundings. Black cabs are a safe mode of transport for getting home, especially if you do not know the area. 

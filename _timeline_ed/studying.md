@@ -13,9 +13,9 @@ image: campus-maps-central.png
 
 #### Facilities
 
-The *Undergraduate* and *Taught Master's Student* labs are in **Appleton Tower**,
-which is close to George Square within the Central Campus. These computing labs
-are open **24/7**, with a Student Card being required to enter before 8am, after 5pm and on weekends.
+The *Undergraduate* and *Taught Master's Student* labs are in **Appleton Tower**, 
+which is within the Central Campus close to George Square . These computing labs
+are open **24/7**, but a Student Card is required to enter before 8am, after 5pm and on weekends.
 
 <a href="http://www.ed.ac.uk/maps/maps"
 class="btn btn-info">
@@ -32,10 +32,8 @@ Campus Maps (Interactive)
 
 #### Timetable
 
-Your timetable will only be available once you've made your course choices - 
-emails during Fresher's week and meeting your PT will help you do this.
 
-Timetables are on MyEd:
+Timetables can be found on your MyEd page:
 
 <ol class="breadcrumb">
   <li>MyEd</li>
@@ -47,9 +45,8 @@ Timetables are on MyEd:
 
 #### Support & Teaching Organisation
 
-THe **ITO** is the *Informatics Teaching Organisation*
-
-They have a collection of *handbooks* available for each year of study:
+The *Informatics Teaching Organisation* (**ITO**) has
+ a collection of *handbooks* available for each year of study, and should be your first point of contact if you have any questions:
 
 <a href="http://web.inf.ed.ac.uk/infweb/student-services/ito/students/new-students"
 class="btn btn-default">

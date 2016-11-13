@@ -1,5 +1,5 @@
 ---
-name: Checking in to accomodation
+name: Checking in to your accomodation
 icon: bed
 date: 2015-10-10
 time: Beginning 12th Sept
@@ -13,6 +13,6 @@ class="btn btn-default">
     Arrival Information for Halls of Residence
 </a>
 
-On arrival you'll be given your *Arrival Pack* wich'll guide you through the tasks you must 
+On arrival you'll be given your *Arrival Pack* which will guide you through the tasks you must 
 complete during Fresher's Week.
 

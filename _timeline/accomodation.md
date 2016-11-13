@@ -10,7 +10,7 @@ whether you wish to apply for the University's *Halls of Residence* or find acco
 
 #### University Accomodation
 
-Both *catered* accomodation at **Pollock Halls** and *self catered* flats around the city.
+There are options of both *catered* accomodation at **Pollock Halls** and *self catered* accomodation in flats and halls around the city.
 
 <div class="btn-group">
   <a class="btn btn-default" href="http://www.accom.ed.ac.uk/for-students/ready-to-apply/">
@@ -31,7 +31,7 @@ Both *catered* accomodation at **Pollock Halls** and *self catered* flats around
 #### Private Housing
 
 It is normal for students to rent on the public property market after their first year, though 
-it is fine top do this in your first year too. 
+it is fine to do this in your first year too. 
 
 Most Students try and live close to Central campus, in Marchmont, Newington, Bruntsfield and Tollcross.
 

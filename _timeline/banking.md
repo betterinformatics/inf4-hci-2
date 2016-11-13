@@ -20,7 +20,7 @@ Most students studying for more than one semester are usually able to open a ban
 
 <strong>(One Semester Only)</strong><br>
 
-Visits of such a short length offer a limited range of suitable banking solutions. It may be worth your time contacting banks directly that will accept your business; Bank of Scotland or Barclays Bank for instance.
+Visits of such a short length offer a limited range of suitable banking solutions. It may be worth your time contacting banks directly that will accept your business, such as Bank of Scotland or Barclays Bank.
 
 </div>
 

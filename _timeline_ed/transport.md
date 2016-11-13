@@ -1,19 +1,19 @@
 ---
-name: Transport around Edinburgh
+name: Getting around around Edinburgh
 icon: bus
 date: 2015-10-25
 ---
 
 For travelling to and from the **King's Buildings** Campus the University offers a free shuttle bus.
-To get on all you need is your Student Card.
+ All you need use it is your Student Card.
 
 <a class="btn btn-default" href="http://www.ed.ac.uk/transport/public-transport/buses/shuttle-bus">
-    King's Shuttle Bus Info
+    King's Shuttle Bus Information
   </a>
 
-Edinburgh has Busses, Trams and Taxis (Black Cab and hireable like Uber). 
-Busses are mostly run by *Lothian Busses*, some other services are also available.
-The Trams mostly cover *New Town*, with routes out to the Western Subburbs and the Airport. 
+Edinburgh has Buses, Trams and Taxis (Black Cab and hireable like Uber). 
+Buses are mostly run by *Lothian Busses*, with some other services also being available.
+The Trams mostly cover *New Town*, with routes out to the Western Suburbs and the Airport. 
 
 <div class="btn-group">
   <a class="btn btn-default" href="http://www.health-service.ed.ac.uk/">
@@ -28,6 +28,5 @@ The Trams mostly cover *New Town*, with routes out to the Western Subburbs and t
 
 <div class="alert alert-info">
     <i class="fa fa-star"></i> <strong>Protip:</strong>
-    Buying a bus pass ('Ridacard') is significantly cheaper than singles if you
-    use the busses a lot.
+     If you use the bus a lot, buying a bus pass ('Ridacard') is significantly cheaper than singles
 </div>

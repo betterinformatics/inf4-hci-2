@@ -4,7 +4,7 @@ icon: wifi
 date: 2015-10-19
 ---
 
-All students at the university may use *Open Access* computers, found in the Library and
+All students at the university may use the *Open Access* computers, found in the Library and
 some other university buildings; These run Microsoft&reg; Windows&trade; - **however** the
 School of Informatics' Lab Machines run **DICE** (Distributed Informatics Computing Environment,
 [more info here&hellip;](http://computing.help.inf.ed.ac.uk/what-is-dice)) which is based on
@@ -53,12 +53,12 @@ href="http://www.ed.ac.uk/information-services/computing/comms-and-collab/office
 
 Eduroam is the preferable way for you to access the internet and University's
 werb serviced on campus. It's part of an international educational network, meaning
-once you're set up on it you will be able to access the internet at thousands of
-Academic locations worldwide. The network is also more secure and resilient than *Central*
+once you've set up your account on it, you will be able to access the internet at thousands of
+Academic locations worldwide. The eduroam network is also more secure and resilient than *Central*.
 
 <a class="btn btn-default" 
 href="http://www.ed.ac.uk/information-services/computing/desktop-personal/wireless-networking/wlan-using">
-    Uni guide on using the Network
+    University guide on using the Network
 </a>
 <br>
 
@@ -66,9 +66,9 @@ href="http://www.ed.ac.uk/information-services/computing/desktop-personal/wirele
 **KeyCom**
 
 If you're in one of the University's Halls of Residence, you will be able
-to access the internet via the KeyCom service. The basic package is *free*,
-paid upgrades are available. Setup instructions will be given to you
-when you arrive.
+to access the internet via the KeyCom service. The basic package is *free*, with
+paid upgrades available. Setup instructions will be given to you
+when you arrive by your accomodation.
 
 <div class="alert alert-info">
     <i class="fa fa-star"></i> <strong>Protip:</strong>
@@ -85,7 +85,7 @@ when you arrive.
 
 <div class="alert alert-success">
     <i class="fa fa-lock"></i> <strong>Safety &amp; Security:</strong>
-    The Uni publishes Information security guides; Services such as the Informatics OpenVPN also
+    The University publishes Information security guides; Services such as the Informatics OpenVPN also
     exist.
     <br><br>
     <div class="btn-group">
