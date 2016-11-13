@@ -24,7 +24,7 @@ layout: default
       
       <!-- Add class 'complete' to mark complete -->
       <div class="timeline-block {% cycle '', 'block-right' %}">
-        <a class="timeline-dot" href="#">
+        <a class="timeline-dot clickable" href="#">
           
               {% if card.icon %}
               <i class="fa fa-{{ card.icon }} timeline-card-icon"></i>
@@ -36,8 +36,8 @@ layout: default
           {% if card.image %}
           <img src="{{ site.baseurl }}/img/{{ card.image }}" class="img-responsive">
           {% endif %}
+          <h1>{{ card.name }}</h1>
           <article>
-            <h1>{{ card.name }}</h1>
 
             {% if card.warn %}
             <div class="timeline-warn">{{ card.warn }}</div>
@@ -112,7 +112,7 @@ layout: default
       
       <!-- Add class 'complete' to mark complete -->
       <div class="timeline-block {% cycle '', 'block-right' %}">
-        <a class="timeline-dot" href="#">
+        <a class="timeline-dot clickable" href="#">
           
               {% if card.icon %}
               <i class="fa fa-{{ card.icon }} timeline-card-icon"></i>
@@ -127,9 +127,10 @@ layout: default
           {% if card.image %}
           <img src="{{ site.baseurl }}/img/{{ card.image }}" class="img-responsive">
           {% endif %}
+          
+          <h1>{{ card.name }}</h1>
+          
           <article>
-            <h1>{{ card.name }}            </h1>
-            
             {% if card.warn %}
             <div class="timeline-warn">{{ card.warn }}</div>
             {% endif %}

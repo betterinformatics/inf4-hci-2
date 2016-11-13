@@ -23,6 +23,7 @@ $container_large: 1140px + $grid_gutter_width;
 $zshadow_0: 0rem 0.1rem 0.3rem 0rem rgba(0,0,0,0.1);
 $zshadow_1: 0rem 0.2rem 0.6rem 0rem rgba(0,0,0,0.3);
 $zshadow_2: 0rem 0.6rem   2rem 0rem rgba(0,0,0,0.4);
+$zshadow_3: 0rem 0.8rem   3rem 0rem rgba(0,0,0,0.7);
 
 
 
@@ -83,6 +84,11 @@ html, body {
     -webkit-box-shadow: $zshadow_2;
     -moz-box-shadow:    $zshadow_2;
     box-shadow:         $zshadow_2;
+}
+.zshadow_3 {
+    -webkit-box-shadow: $zshadow_3;
+    -moz-box-shadow:    $zshadow_3;
+    box-shadow:         $zshadow_3;
 }
 
 
@@ -297,6 +303,11 @@ header.mainhead {
     }
 }
 
+.carousel-control.right,
+.carousel-control.left {
+    background: none;
+}
+
 
 
 .timeline {
@@ -404,10 +415,11 @@ header.mainhead {
     position: relative;
     left: 50%;
     margin-left: -30px;
-    /* -webkit-box-shadow: $zshadow_1; */
-    /* -moz-box-shadow:    $zshadow_1; */
-    /* box-shadow:         $zshadow_1; */
-    transition: border-color 0.3s ease;
+    -webkit-box-shadow: $zshadow_1;
+    -moz-box-shadow:    $zshadow_1;
+    box-shadow:         $zshadow_1;
+    transition: border-color 0.3s ease,
+    box-shadow 0.3s ease;
 
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
@@ -421,7 +433,21 @@ header.mainhead {
 .timeline .timeline-block.complete .timeline-dot,
 .timeline .timeline-block .timeline-dot:hover {
     border-color: $theme_success;
+}
 
+.timeline .timeline-block .timeline-dot:hover {
+    -webkit-box-shadow: $zshadow_2;
+    -moz-box-shadow:    $zshadow_2;
+    box-shadow:         $zshadow_2;
+}
+
+.timeline .timeline-block .timeline-dot:active {
+    -webkit-box-shadow: $zshadow_3;
+    -moz-box-shadow:    $zshadow_3;
+    box-shadow:         $zshadow_3;
+}
+
+.timeline .timeline-block.complete .timeline-dot {
     .fa:before {
         content: "\f00c";
     }
@@ -437,7 +463,7 @@ header.mainhead {
     font-size: 2em;
 }
 
-.timeline .timeline-content {
+.timeline .timeline-block .timeline-content {
     position: relative;
     margin-top: -60px;
     background: #FFF;
@@ -445,12 +471,20 @@ header.mainhead {
     min-height: 80px;
     color: $theme_dark_gray;
     border-radius: 0.2em;
-
+    opacity: 1.0;
+    
+    transition: opacity 1.0s ease,
+    color 0.6s ease;
+    
     article {
         padding: 1em 2.5em 2em 2.5em;
+        transition: max-height 1.0s ease,
+        padding 1.0s ease;
+        max-height: auto;
     }
     
     h1 {
+        padding: 1em 0em 0em 1.2em;
         margin: 0.5em 0;
         margin-bottom: 0.6em;
         font-size: 2em;
@@ -463,7 +497,15 @@ header.mainhead {
 
 .timeline .timeline-block.complete .timeline-content {
     color: lighten($theme_dark_gray, 30%);
-    opacity: 0.6;
+    opacity: 0.5;
+
+    article {
+        /*
+        padding-bottom: 0;
+        max-height: 0;
+        */
+        overflow: hidden;
+    }
 
     h1 {
         text-decoration: line-through;
