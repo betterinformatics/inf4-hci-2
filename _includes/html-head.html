@@ -24,10 +24,9 @@
 
     <script src="{{ site.baseurl }}/js/scroll.js"></script>
 
-{% if site.url == 'http://localhost:4000' or site.url == 'http://127.0.0.1:4000' %}
 {% if page.url == '/abtest/' or page.url == '/batest/' %}
 
-<!-- Only include on deeploy -->
+<!-- A/B Testing Version -->
 
 <!-- Google Analytics Content Experiment code -->
 <script>function utmx_section(){}function utmx(){}(function(){var
@@ -44,8 +43,10 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 </script><script>utmx('url','A/B');</script>
 <!-- End of Google Analytics Content Experiment code -->
 
+{% else %}
 
-{% endif %}
+<!-- Not running an A/B test -->
+
 {% endif %}
 
     <script>
