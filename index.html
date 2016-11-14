@@ -30,7 +30,7 @@ layout: default
 
           {% for card in cards_pre %}
           
-          <a name="{{ card.name | url_encode }}"></a>
+          <a name="{{ card.name | url_encode }}" id="{{ card.name | url_encode }}"></a>
 
           <!-- Add class 'complete' to mark complete -->
           <div class="timeline-block {% cycle '', 'block-right' %}" id="{{ card.date | url_encode }}">

@@ -62,7 +62,6 @@ var affixers = function() {
 
 
 $(document).ready(affixers);
-$(window).resize(affixers);
 
 /* Scroll around based on keyboard presses */
 
