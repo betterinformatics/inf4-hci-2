@@ -117,6 +117,18 @@ html, body {
     box-shadow:         $zshadow_2;
 }
 
+.btn-pink {
+    color: #fff;
+    background: $theme_pink;
+    border-color: darken($theme_pink, 10%);
+}
+
+.btn-pink:active,
+.btn-pink:hover {
+    color: #eee;
+    background: darken($theme_pink, 5%);
+}
+
 
 
 
@@ -127,7 +139,17 @@ html, body {
     color: #aaa;
 }
 
-
+.carousel-caption {
+    text-shadow: 1px 2px 1px rgba(0,0,0,0.9);
+}
+@media(max-width: $container_tablet){
+    .carousel-caption{
+        font-size: 1em;
+        h1, h2 {
+            font-size: 1.5em;
+        }
+    }
+}
 
 .serif {
     font-family: $serif_font;
@@ -188,17 +210,6 @@ html, body {
     bottom: 0.8em;
     width: 100%;
     text-align: center;
-
-    .btn-default {
-        color: #fff;
-        background: $theme_pink;
-        border-color: darken($theme_pink, 10%);
-    }
-
-    .btn-default:active {
-        color: #eee;
-        background: darken($theme_pink, 5%);
-    }
 }
 
 

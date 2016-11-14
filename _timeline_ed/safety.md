@@ -41,3 +41,22 @@ Keep your valuables out of sight and make sure that your doors and windows are l
 **Moving Around the City**
 
 Try not to  walk home at night alone. Make sure that you plan ahead and try to stay with your friends. Be sure to keep aware of your surroundings. Black cabs are a safe mode of transport for getting home, especially if you do not know the area. 
+
+---
+
+#### University Security
+
+The Uni Scurity section is rtesponsible for emergency buildings problems and personal safety issues -- 
+They can be called 24/7. In a serious emergency such as a fire **Allways call 999 first**. Security staff
+are identifiable by their red jackets and vehicles, and will *allways* be carrying ID (You should ask
+to see it if in doubt)
+
+<div class="btn-group">
+  <a class="btn btn-pink" href="tel:+441316501000">
+    Emergency 0131 650 1000
+  </a>
+  
+  <a class="btn btn-default" href="http://www.ed.ac.uk/estates/what-we-do/security/about/contact-security">
+    Contact Security
+  </a>
+</div>

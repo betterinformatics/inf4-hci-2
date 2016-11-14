@@ -29,8 +29,8 @@ Visits of such a short length offer a limited range of suitable banking solution
 <br>
 <div class="alert alert-info">
     <i class="fa fa-star"></i> <strong>Protip:</strong>
-    Many banks offer <em>Student Debit Accounts</em> with interest-free overdrafts, 
-    which many students find essential to spreading the load of living costs between paydays.
+    For students from the UK many banks offer accounts with interest-free overdrafts, 
+    which many find essential to spreading the load of living costs between paydays.
 </div>
 
 ---
