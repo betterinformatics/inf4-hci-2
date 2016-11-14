@@ -97,6 +97,38 @@ html, body {
     height: 100%;
 }
 
+
+.btn {
+    transition: box-shadow 0.3s ease,
+    background-color 0.3s ease;
+    -webkit-box-shadow: $zshadow_0;
+    -moz-box-shadow:    $zshadow_0;
+    box-shadow:         $zshadow_0;
+}
+.btn:hover,
+.btn:focus {
+    -webkit-box-shadow: $zshadow_1;
+    -moz-box-shadow:    $zshadow_1;
+    box-shadow:         $zshadow_1;
+}
+.btn:active {
+    -webkit-box-shadow: $zshadow_2;
+    -moz-box-shadow:    $zshadow_2;
+    box-shadow:         $zshadow_2;
+}
+
+
+
+
+.breadcrumb > li+li:before {
+    content: "\f061";
+    font-family: 'FontAwesome';
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+
+
 .serif {
     font-family: $serif_font;
 }
@@ -176,7 +208,7 @@ html, body {
     font-family: $serif_font;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: bold;
     margin-top: 1em;
     margin-bottom: 2em;
@@ -190,7 +222,19 @@ html, body {
 .narrative-heading:before,
 .narrative-heading:after {
     content: "—";
+    display: block;
     margin: 0 0.5em;
+}
+
+@media(min-width: $container_tablet){
+    .narrative-heading {
+        font-size: 1.3em;
+    }
+
+    .narrative-heading:before,
+    .narrative-heading:after {
+        display: inline;
+    }
 }
 
 .colourback {
@@ -502,6 +546,28 @@ header.mainhead {
     }
 }
 
+.timeline-time {
+    text-align: left;
+    margin: 5px 0px;
+    width: 44%;
+    padding: 0px;
+    padding-top: 16px;
+    margin-left: 56%;
+    margin-top: -60px;
+    color: #333;
+    text-transform: uppercase;
+    font-family: $serif_font;
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+    padding-bottom: 0.8em;
+    opacity: 1.0;
+    transition: opacity 0.3s ease;
+}
+
+.timeline-block.complete .timeline-time {
+    opacity: 0.6;
+}
+
 .timeline .timeline-block.complete .timeline-content {
     color: lighten($theme_dark_gray, 20%);
     opacity: 0.4;
@@ -524,22 +590,6 @@ header.mainhead {
     text-transform: uppercase;
     font-family: $serif_font;
     letter-spacing: 0.1em;
-}
-
-.timeline-time {
-    text-align: left;
-    margin: 5px 0px;
-    width: 44%;
-    padding: 0px;
-    padding-top: 16px;
-    margin-left: 56%;
-    margin-top: -60px;
-    color: #333;
-    text-transform: uppercase;
-    font-family: $serif_font;
-    letter-spacing: 0.1em;
-    font-size: 1.2em;
-    padding-bottom: 0.8em;
 }
 
 .timeline .timeline-block.block-right .timeline-time {
