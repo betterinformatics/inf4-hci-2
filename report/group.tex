@@ -36,10 +36,10 @@
 \vspace{1em}
 \noindent
 \begin{tabular}{l r}
-  Ben Shaw       & s1338564\\
   Chris Campbell & s1334028\\
   Karel Kuzmiak  & s1334628\\
   Angus Pearson  & s1311631\\
+  Ben Shaw       & s1338564\\
 \end{tabular}
 
 %\tableofcontents
@@ -47,12 +47,53 @@
 
 %% REQUIREMENTS %%
 
-\section{Topics}
+\section{Design Motivations and Coverage}
 
 % The topic(s) you decided to cover in the website. What kind of information 
-% you were trying to convey. 
+% you were trying to convey
 
-\section{Design Motivation}
+\begin{marginfigure}
+  \includegraphics{acceptance_admissions_affinity.png}
+  \caption{
+    \label{fig:accept-admit-affinity}
+    A section of an Affinity Diagram, where all the questions about admissions relate to
+    the timing of admissions. Other qustions in the `Acceptance and Admissions' group pertained to
+    meeting conditions and the post-decision process.}
+\end{marginfigure}
+
+``Produce an interface for students who have \textit{recently} been admitted to the 
+University of Edinburgh's School of Informatics''
+
+\vspace{1em}
+
+Looking at the Affinity Diagrams from the HCI Tutorials, it becomes clear there's 
+an emergent Linear Chronology to the questions asked. From this it follows that at 
+any given time, the questions and information needs a New Student 
+may have will be closely related to where they are upon a timeline running towards 
+Fresher's week (Illustr. Fig.\ref{fig:accept-admit-affinity}).
+ Further to this, a number of tasks required of new students are \textit{``Do once 
+and forget''} in nature; it's super important that they do this thing, but once it's done
+it doesn't ever need their attention again.
+
+Following from that, we propose a timeline-style interface, where information is arranged 
+in cards sequentially along a vertically descending line. Iconography down the timeline 
+allows quick scanning and recognition, whith the icon roundalls being clickable, to mark 
+the accompanying content card as `done' (Here `done' is rather abstract, meaning completed
+or no longer requiring the user's attantion).
+
+As the timeline design is an unfamiliar pattern with most users, a concern is that the 
+pointed circles blah afford clicking
+
+% Users aren't affraid to scroll --> Justifies super long single page
+% https://www.clicktale.com/academy/blog/unfolding-the-fold-insights-into-webpage-scroll/
+%
+% 91% of the page-views had a scroll-bar.
+% 76% of the page-views with a scroll-bar, were scrolled to some extent.
+% 22% of the page-views with a scroll-bar, were scrolled all the way to the bottom.
+
+
+
+\section{Usability Analysis}
 
 % Reasoning behind why the website is usable. This section will likely include 
 % the outcome of any evaluations you conducted. Unlike the last coursework I do 
@@ -117,7 +158,6 @@ and associated pages.
 % for the general design of the website and the remaining 40 points will be marked 
 % based on the individual portion of the work.
 
-1) Everybody gets the same mark
 
 
 %       ^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^
