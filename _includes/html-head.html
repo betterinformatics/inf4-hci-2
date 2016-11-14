@@ -24,6 +24,11 @@
 
     <script src="{{ site.baseurl }}/js/scroll.js"></script>
 
+{% if site.url == 'http://localhost:4000' or site.url == 'http://127.0.0.1:4000' %}
+{% if page.url == '/abtest/' or page.url == '/batest/' %}
+
+<!-- Only include on deeploy -->
+
 <!-- Google Analytics Content Experiment code -->
 <script>function utmx_section(){}function utmx(){}(function(){var
 k='116068042-0',d=document,l=d.location,c=d.cookie;
@@ -38,6 +43,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
 </script><script>utmx('url','A/B');</script>
 <!-- End of Google Analytics Content Experiment code -->
+{% endif %}
+{% endif %}
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
