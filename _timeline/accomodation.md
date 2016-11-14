@@ -10,6 +10,8 @@ whether you wish to apply for the University's *Halls of Residence* or find acco
 
 #### University Accomodation
 
+*For those who apply yet do not have a home address within the City of Edinburgh, your place in university accommodation is *guaranteed*.
+
 There are options of both *catered* accomodation at **Pollock Halls** and *self catered* accomodation in flats and halls around the city.
 
 <div class="btn-group">
