@@ -23,46 +23,41 @@ layout: default
         </div>
         
         <div class="timeline"  data-target="#t1Affix">
-          <div class="timeline-line arrow-bottom">
-            <div class="timeline-complete"  id="timelineOne">
-            </div>
-          </div>
 
           {% for card in cards_pre %}
-          
-          <a name="{{ card.name | url_encode }}" id="{{ card.name | url_encode }}"></a>
 
-          <!-- Add class 'complete' to mark complete -->
-          <div class="timeline-block {% cycle '', 'block-right' %}" id="{{ card.date | url_encode }}">
-            <a class="timeline-dot clickable" href="#">
-              
-              {% if card.icon %}
-              <i class="fa fa-{{ card.icon }} timeline-card-icon"></i>
-              {% else %}
-              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-              {% endif %}
-            </a>
+          {% cycle '<div class="row">', '' %}
             
-            <div class="timeline-content zshadow_1">
-              {% if card.image %}
-              <img src="{{ site.baseurl }}/img/{{ card.image }}" class="img-responsive">
-              {% endif %}
-              <h1>{{ card.name }}</h1>
-              
-              <article>
-                {% if card.time %}
-                <div class="timeline-time">{{ card.time }}</div>
-                {% endif %}
-                {% if card.warn %}
-                <div class="timeline-warn">{{ card.warn }}</div>
-                {% endif %}
+            <a name="{{ card.name | url_encode }}" id="{{ card.name | url_encode }}"></a>
 
-                {{ card.content }}
-              </article>
+            <!-- Add class 'complete' to mark complete -->
+            <div id="{{ card.date | url_encode }}" class="vspace col-sm-6">
+              
+              <div class="card padder zshadow_1">
+                {% if card.image %}
+                <img src="{{ site.baseurl }}/img/{{ card.image }}" class="img-responsive">
+                {% endif %}
+                {% if card.icon %}
+                <h1><i class="fa fa-{{ card.icon }} timeline-card-icon"></i></h1>
+                {% else %}
+                <h1><i class="fa fa-ellipsis-h" aria-hidden="true"></i></h1>
+                {% endif %}
+                <h1>{{ card.name }}</h1>
+                <article>
+
+                  {% if card.warn %}
+                  <div class="timeline-warn">{{ card.warn }}</div>
+                  {% endif %}
+
+                  {{ card.content }}
+                </article>
+              </div>
             </div>
-          </div>
+
+            {% cycle '', '</div>' %}
 
           {% endfor %}
+          {% cycle '', '</div>' %}
 
         </div><!-- .timeline -->
 
@@ -174,45 +169,39 @@ layout: default
         </div>
         
         <div class="timeline">
-          <div class="timeline-line">
-            <div class="timeline-complete" id="timelineTwo">
-            </div>
-          </div>
           
           <!-- {% cycle '', 'block-right' %} -->
           {% for card in cards_ed %}
-          <a name="{{ card.name | url_encode }}"></a>
-          
-          <!-- Add class 'complete' to mark complete -->
-          <div class="timeline-block {% cycle '', 'block-right' %}">
-            <a class="timeline-dot clickable" href="#">
-              
-              {% if card.icon %}
-              <i class="fa fa-{{ card.icon }} timeline-card-icon"></i>
-              {% else %}
-              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-              {% endif %}
-            </a>
+
+          {% cycle '<div class="row">', '' %}
             
-            <div class="timeline-content zshadow_1">
-              {% if card.image %}
-              <img src="{{ site.baseurl }}/img/{{ card.image }}" class="img-responsive">
-              {% endif %}
+            <a name="{{ card.name | url_encode }}" id="{{ card.name | url_encode }}"></a>
+
+            <!-- Add class 'complete' to mark complete -->
+            <div id="{{ card.date | url_encode }}" class="vspace col-sm-6">
               
-              <h1>{{ card.name }}</h1>
-              
-              <article>
-                {% if card.time %}
-                <div class="timeline-time">{{ card.time }}</div>
+              <div class="card padder zshadow_1">
+                {% if card.image %}
+                <img src="{{ site.baseurl }}/img/{{ card.image }}" class="img-responsive">
                 {% endif %}
-                {% if card.warn %}
-                <div class="timeline-warn">{{ card.warn }}</div>
+                {% if card.icon %}
+                <h1><i class="fa fa-{{ card.icon }} timeline-card-icon"></i></h1>
+                {% else %}
+                <h1><i class="fa fa-ellipsis-h" aria-hidden="true"></i></h1>
                 {% endif %}
-                
-                {{ card.content }}
-              </article>
+                <h1>{{ card.name }}</h1>
+                <article>
+
+                  {% if card.warn %}
+                  <div class="timeline-warn">{{ card.warn }}</div>
+                  {% endif %}
+
+                  {{ card.content }}
+                </article>
+              </div>
             </div>
-          </div>
+
+            {% cycle '', '</div>' %}
 
           {% endfor %}
 

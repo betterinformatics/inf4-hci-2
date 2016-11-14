@@ -549,24 +549,15 @@ header.mainhead {
 .timeline-time {
     text-align: left;
     margin: 5px 0px;
-    width: 44%;
     padding: 0px;
-    padding-top: 16px;
-    margin-left: 56%;
-    margin-top: -60px;
     color: #333;
     text-transform: uppercase;
     font-family: $serif_font;
     letter-spacing: 0.1em;
     font-size: 1.2em;
     padding-bottom: 0.8em;
-    opacity: 1.0;
-    transition: opacity 0.3s ease;
 }
 
-.timeline-block.complete .timeline-time {
-    opacity: 0.6;
-}
 
 .timeline .timeline-block.complete .timeline-content {
     color: lighten($theme_dark_gray, 20%);
@@ -590,11 +581,6 @@ header.mainhead {
     text-transform: uppercase;
     font-family: $serif_font;
     letter-spacing: 0.1em;
-}
-
-.timeline .timeline-block.block-right .timeline-time {
-    margin-left: 0;
-    text-align: right;
 }
 
 .timeline .timeline-block.block-right .timeline-content {
