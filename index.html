@@ -21,34 +21,34 @@ layout: default
         <div class="narrative-heading">
           Preparing for Edinburgh
         </div>
-        
-        <div class="timeline"  data-target="#t1Affix">
+
+        <div class="timeline"  data-target="#t1Affix" id="t1">
           <div class="timeline-line arrow-bottom">
             <div class="timeline-complete"  id="timelineOne">
             </div>
           </div>
 
           {% for card in cards_pre %}
-          
+
           <a name="{{ card.name | url_encode }}" id="{{ card.name | url_encode }}"></a>
 
           <!-- Add class 'complete' to mark complete -->
           <div class="timeline-block {% cycle '', 'block-right' %}" id="{{ card.date | url_encode }}">
             <a class="timeline-dot clickable" href="#">
-              
+
               {% if card.icon %}
               <i class="fa fa-{{ card.icon }} timeline-card-icon"></i>
               {% else %}
               <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
               {% endif %}
             </a>
-            
+
             <div class="timeline-content zshadow_1">
               {% if card.image %}
               <img src="{{ site.baseurl }}/img/{{ card.image }}" class="img-responsive">
               {% endif %}
               <h1>{{ card.name }}</h1>
-              
+
               <article>
                 {% if card.time %}
                 <div class="timeline-time">{{ card.time }}</div>
@@ -113,27 +113,27 @@ layout: default
       <script src="{{ site.baseurl }}/js/maps.js" type="text/javascript"></script>
     </div>
 
-    <div class="col-lg-4 
+    <div class="col-lg-4
                 col-md-6">
       <div class="padder">
-        
+
         <div class="padder card zshadow_1">
           <h1 class="serif">Fresher's Week</h1>
-	  
+
           <hr>
-          
+
           <p>
-	    A week of events put on by the University and by the Student's Association for both new &amp; 
-            returning students. Located in the university's central campus, the School's Appleton Tower 
+	    A week of events put on by the University and by the Student's Association for both new &amp;
+            returning students. Located in the university's central campus, the School's Appleton Tower
             and Informatics Forum play host to a range of events tailored to incoming Informatics students.
 	  </p>
           <p>
-	    The central campus is a short walk from <em>Pollock Halls</em>, which sits at the foot 
+	    The central campus is a short walk from <em>Pollock Halls</em>, which sits at the foot
             of Arthur's Seat.
           </p>
           <hr>
           <p>
-            Familiarise yourself with the Central Campus map here or for more detail, check out the 
+            Familiarise yourself with the Central Campus map here or for more detail, check out the
             University's full campus maps:
           </p>
           <p>
@@ -147,7 +147,7 @@ layout: default
       </div>
     </div>
 
-    
+
   </div><!-- /.row -->
 </div><!-- /.container -->
 
@@ -172,35 +172,35 @@ layout: default
         <div class="narrative-heading">
           1<small>st</small> Semester Begins, 10<small>th</small> Sept
         </div>
-        
-        <div class="timeline">
+
+        <div class="timeline" id="t2">
           <div class="timeline-line">
             <div class="timeline-complete" id="timelineTwo">
             </div>
           </div>
-          
+
           <!-- {% cycle '', 'block-right' %} -->
           {% for card in cards_ed %}
           <a name="{{ card.name | url_encode }}"></a>
-          
+
           <!-- Add class 'complete' to mark complete -->
           <div class="timeline-block {% cycle '', 'block-right' %}">
             <a class="timeline-dot clickable" href="#">
-              
+
               {% if card.icon %}
               <i class="fa fa-{{ card.icon }} timeline-card-icon"></i>
               {% else %}
               <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
               {% endif %}
             </a>
-            
+
             <div class="timeline-content zshadow_1">
               {% if card.image %}
               <img src="{{ site.baseurl }}/img/{{ card.image }}" class="img-responsive">
               {% endif %}
-              
+
               <h1>{{ card.name }}</h1>
-              
+
               <article>
                 {% if card.time %}
                 <div class="timeline-time">{{ card.time }}</div>
@@ -208,7 +208,7 @@ layout: default
                 {% if card.warn %}
                 <div class="timeline-warn">{{ card.warn }}</div>
                 {% endif %}
-                
+
                 {{ card.content }}
               </article>
             </div>
@@ -225,8 +225,13 @@ layout: default
           (Semester 2 runs from 11th Jan to 26 May 2017)
         </div><!-- .timeline -->
 
-        
+
       </div>
+
+      <script> </<script type="text/javascript">
+
+
+      </script>
 
       <div class="col-lg-2">
 
@@ -266,4 +271,3 @@ layout: default
 
 
 {% include modals.html %}
-
