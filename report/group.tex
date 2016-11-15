@@ -45,44 +45,25 @@
 %\tableofcontents
 %\newpage
 
-%% REQUIREMENTS %%
-
-\section{Design Motivations and Coverage}
-
-% The topic(s) you decided to cover in the website. What kind of information 
-% you were trying to convey
+\section{Design Decisions}\label{design-decisions}
 
 \begin{marginfigure}
   \includegraphics{acceptance_admissions_affinity.png}
   \caption{
     \label{fig:accept-admit-affinity}
-    A section of an Affinity Diagram, where all the questions about admissions relate to
-    the timing of admissions. Other qustions in the `Acceptance and Admissions' group pertained to
-    meeting conditions and the post-decision process.}
+    A section of an Affinity Diagram, where all the questions about admissions relate to the timing of admissions. Other qustions in the `Acceptance and Admissions' group pertained to meeting conditions and the post-decision process.}
 \end{marginfigure}
 
-``Produce an interface for students who have \textit{recently} been admitted to the 
-University of Edinburgh's School of Informatics''
+The affinity diagrams produced by the tutorial groups revealed that the questions asked could easily be mapped in accordance with \textit{time} in the lead up to starting at the University of Edinburgh. Following from that, we propose an interface centred on a timeline, with information arranged in cards sequentially placed along a vertically descending line. Iconography down the timeline allows quick scanning and recognition, with the icon roundalls being clickable, to mark the accompanying content card as \texttt{done} (Here, 'done', is rather abstract; meaning completed or no longer requiring the user's attention).
+\section{Design Motivations}\label{design-motivations}
 
-\vspace{1em}
+Our colour scheme consists of three primary colours: pink, consistent with the University's branding for Fresher's week; blue, a colour used heavily by the University's welcome literature; and green, which is standard convention for progress.
 
-Looking at the Affinity Diagrams from the HCI Tutorials, it becomes clear there's 
-an emergent Linear Chronology to the questions asked. From this it follows that at 
-any given time, the questions and information needs a New Student 
-may have will be closely related to where they are upon a timeline running towards 
-Fresher's week (Illustr. Fig.\ref{fig:accept-admit-affinity}).
- Further to this, a number of tasks required of new students are \textit{``Do once 
-and forget''} in nature; it's super important that they do this thing, but once it's done
-it doesn't ever need their attention again.
+Continuing to adhere to the University's design guidelines, our page makes use of the \textit{Crimson Text} and \textit{Source Sans Pro} fonts.
 
-Following from that, we propose a timeline-style interface, where information is arranged 
-in cards sequentially along a vertically descending line. Iconography down the timeline 
-allows quick scanning and recognition, whith the icon roundalls being clickable, to mark 
-the accompanying content card as `done' (Here `done' is rather abstract, meaning completed
-or no longer requiring the user's attantion).
+Upon loading the page, users are greeted by an illustrated \textit{hero image} of the University's Old College. The hero serves as a clear and obvious call to above the fold; stating what the page it is, who it is for and what it contains. Beneath the fold is a timeline that has \textit{cards}\footnote{Inspired by \textit{Material Design}, a subtle shadow drawn from the card mimics that of physical paper.} spread out in a \textit{zigzag}fashion, centring the user's focus on one item at a time whilst creating a vertical progression that logically follows from the content's temporal nature. Each card is signposted by an \textit{icon} which allows for users to get an immediate idea of its contents. \textit{Buttons} were opted for over plain hyperlinks, following the belief that buttons offer more affordance to the user.
 
-As the timeline design is an unfamiliar pattern with most users, a concern is that the 
-pointed circles blah afford clicking
+%% REQUIREMENTS %%
 
 % Users aren't affraid to scroll --> Justifies super long single page
 % https://www.clicktale.com/academy/blog/unfolding-the-fold-insights-into-webpage-scroll/
@@ -91,7 +72,9 @@ pointed circles blah afford clicking
 % 76% of the page-views with a scroll-bar, were scrolled to some extent.
 % 22% of the page-views with a scroll-bar, were scrolled all the way to the bottom.
 
+\section{Questionnaire}\label{survey-monkey-questionnaire-and-analysis}
 
+In order to carry out A/B testing, two different versions of the webpage were crafted. The A design utilised the aforementioned timeline format; the \textit{challenger} B design instead presented cards with a grid formation. The results from the survey, consisting of the \emph{30} responses received, showed a strong preference towards the A version of the website. Specifically, respondents generally found that the linear chronological form was easier to navigate and proved to be more effective at clearly displaying the information.
 
 \section{Usability Analysis}
 
@@ -101,11 +84,21 @@ pointed circles blah afford clicking
 % on the method you used is fine. The key is providing reasoning on either why 
 % the site is usable, or what you changed to make it so.
 
+We made use of our tutorials in order to extensively question tutors to get feedback throughout different stages of development. Questions were prepared before the evaluations and hand written notes were taken of the feedback given back. Several design changes were made following the feedback which helped lead to an improved product.
+
 \section{Reflection}
 
 % Reflection paragraph: what you have learned from completing this coursework. 
 % What worked, what didn't, and if you could go back and do this coursework 
 % again what might you do differently the next time.
+
+Upon completion of the implementation phase of our webpage we realised that a huge aid to us as a group had been the robustness and relatively small learning curve of \textit{Bootstrap}. \textit{Bootstrap} allowed for us to refine and expand upon previously existing templates, producing a webpage boasting a responsive design. Undertaking the implementation phase in this manner allowed for the team to spend more time developing our test phase and the subsequent write up. It is known that the webpage still suffers from flaws, mostly as a result of time-constraints and incomplete implementations, yet in the face of positive feedback it was decided to cease the webpage's implementation.
+
+One request raised within feedback was for the webpage to remember stateful information. Our team had hoped to implement this, whether it be the usage of cookies or whatnot, as it would have been exceedingly beneficial to new students looking to continuously monitor their progress before and immediately after starting university. If this were to be implemented, it would tie in to the core element that is the timeline and embolden the page's theme of chronological progression.
+
+\section{Instructing and Manipulating (Interaction Methods)}\label{instructing-and-manipulatinginteraction-methods}
+
+Our team chose to implement the \textit{instructing and manipulating} methods on our webpage. Early alpha versions held an attempt at conversing with the user by prompting them on arrival with \textit{multiple choice tick box} questions with the hope of gauging what type of student they are. It had been hoped that this would allow for the page to be tailored in accordance with that particular student's needs. Examples of this would be hiding information regarding visas to students who already reside in the UK or Éire, yet displaying it those who live elsewhere. This implementation was ultimately scrapped as it proved to be less feasible to implement within our given time frame.
 
 
 \section{Tools and Templates}
@@ -148,8 +141,7 @@ and associated pages.
 
 
 
-\section*{Mark Allocation}
-
+\section*{Group Mark Allocation}\label{group-mark-allocation}
 %% REQUIREMENTS %%
 
 % How the group would like me to allocate marks. Two options: 1) everybody gets 
@@ -158,13 +150,7 @@ and associated pages.
 % for the general design of the website and the remaining 40 points will be marked 
 % based on the individual portion of the work.
 
-
-
-%       ^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^
-
-
-%\bibliography{group}
-%\bibliographystyle{plainnat}
+We wish for allocated marks to be identical for each member of our team.
 
 \end{document}
 
