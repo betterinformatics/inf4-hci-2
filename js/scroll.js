@@ -18,20 +18,72 @@ $(document).ready(function() {
 });
 
 
-/* Timeline */
+/** Next & Previous Buttons **/
+
+/* Next: */
+$(function() {
+    $('#go-next').click(function () {
+        var ele = $('.topVisibleItem').closest('body').find('.timeline-block').not('.complete');
+        $("body").animate({
+            scrollTop: $(ele).offset().top
+        },400);
+        return false;
+    });
+});
+
+/* Prev: */
+$(function() {
+    $('#go-prev').click(function () {
+        var ele = $('.topVisibleItem').closest('body').find('.timeline-block').not('.complete');
+        $("body").animate({
+            scrollTop: $(ele).offset().top
+        },400);
+        return false;
+    });
+});
+
+
+/* As document scrolls keep track of top visible item*/ 
+$(document).scroll(function() {
+    var cutoff = $(window).scrollTop();
+    $('.timeline-block').removeClass('topVisibleItem').each(function() {
+        if ($(this).offset().top > cutoff) {
+            $(this).addClass('topVisibleItem');
+            return false; // stops the iteration after the first one on screen
+        }
+    });
+});
+
+
+
+
+/** Timeline **/
+
 
 $(function() {
     $(".clickable").click(function() {
         var parent_block = $(this).parent(".timeline-block");
-				var timelineOne = $('#timelineOne');
+	var timelineOne = $('#timelineOne');
         parent_block.toggleClass("complete");
-				if(parent_block.hasClass( "complete" ))
-				{
-					var h = $(this).offset().top - $("#t1").offset().top + $(this).outerHeight(true);
-					timelineOne.css("height", h + "px");
-				}
+	if(parent_block.hasClass( "complete" ))
+	{
+	    var h = $(this).offset().top - $("#t1").offset().top + $(this).outerHeight(true);
+	    timelineOne.css("height", h + "px");
+	}
+        return false; // Suppress default behaviour
+    });
+});
 
-        // TODO: In here, expand complete bar
+$(function() {
+    $(".clickable2").click(function() {
+        var parent_block = $(this).parent(".timeline-block");
+	var timelineOne = $('#timelineTwo');
+        parent_block.toggleClass("complete");
+	if(parent_block.hasClass( "complete" ))
+	{
+	    var h = $(this).offset().top - $("#t2").offset().top + $(this).outerHeight(true);
+	    timelineOne.css("height", h + "px");
+	}
         return false; // Suppress default behaviour
     });
 });

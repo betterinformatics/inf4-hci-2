@@ -33,7 +33,8 @@ layout: default
           <a name="{{ card.name | url_encode }}" id="{{ card.name | url_encode }}"></a>
 
           <!-- Add class 'complete' to mark complete -->
-          <div class="timeline-block {% cycle '', 'block-right' %}" id="{{ card.date | url_encode }}">
+          <div class="timeline-block {% cycle '', 'block-right' %}
+                      {% if forloop.first == true %}topVisibleItem{% endif %}" id="{{ card.date | url_encode }}">
             <a class="timeline-dot clickable" href="#">
 
               {% if card.icon %}
@@ -185,7 +186,7 @@ layout: default
 
           <!-- Add class 'complete' to mark complete -->
           <div class="timeline-block {% cycle '', 'block-right' %}">
-            <a class="timeline-dot clickable" href="#">
+            <a class="timeline-dot clickable2" href="#">
 
               {% if card.icon %}
               <i class="fa fa-{{ card.icon }} timeline-card-icon"></i>
