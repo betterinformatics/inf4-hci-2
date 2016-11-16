@@ -67,7 +67,6 @@ Continuing to adhere to the University's design guidelines, our design makes use
 
 Upon loading the page, users are greeted by an illustrated \textit{hero image} of the University's Old College. The hero serves as a clear call to action above the fold, and grounds content below -- stating what the page it is, who it is for and what it contains. Beneath the fold begins the timeline that has \textit{cards}\footnote{Inspired by the \textit{Material Design} paradigm, a drop shadow drawn from below the card mimics that of physical paper's interaction with light.} spread out in a \textit{zigzag} fashion, centring the user's focus on one item at a time whilst creating a vertical progression that logically follows from the content's temporal nature. Each card is signposted by an \textit{icon} which alludes to it's content and topic. \textit{Buttons} were opted for over plain hyperlinks, following the belief that buttons afford clickability more than a traditional blue hyperlink. Further to this buttons hold more visual weight and from a usability perspective present a larger touch target on smaller, touchscreen devices.
 
-%% REQUIREMENTS %%
 
 % Users aren't affraid to scroll --> Justifies super long single page
 % https://www.clicktale.com/academy/blog/unfolding-the-fold-insights-into-webpage-scroll/
@@ -80,12 +79,31 @@ Upon loading the page, users are greeted by an illustrated \textit{hero image} o
 
 Our team chose to implement the \textit{instructing and manipulating} interactions on our webpage. Early versions of the webpage held an attempt at conversing with the user by prompting them on arrival with an \textit{instant messaging} conversational form, with the hope of gauging what type of student they are. It had been hoped that this would allow for the page to be tailored in accordance with that particular student's needs. For example, hiding information regarding visas to students who already reside in the UK or ROI, yet displaying it those who live elsewhere. This feature was ultimately scrapped as it proved to be complex to implement within our given time frame, and given it's dependance on persistent state, out of scope.
 
+TODO: Tour
+
+TODO: Interaction figure
+
 
 \section{Usability Testing}\label{sec:usability-testing}
 
 \subsection{A/B Testing}\label{subsec:a-b-testing}
 
-To conduct an \textit{A/B} test, two different versions of the webpage were created -- \textit{A}'s design utilised the aforementioned timeline format; the \textit{challenger} \textit{B} design instead presented a more conventional tiled card formation. The results from the survey, consisting of the \emph{30} responses received, showed a strong preference towards the \textit{A} version of the website. Specifically, respondents generally found that the linear chronological form was easier to navigate and proved to be more effective at clearly displaying the information.
+To conduct an \textit{A/B} test, two different versions of the webpage were created -- \textit{A}'s design utilised the aforementioned timeline format; the \textit{challenger} \textit{B} design instead presented a more conventional tiled card formation. These variants are shown in Figure \ref{fig:abtest}. The results from the survey, consisting of the \emph{30} responses received, showed a strong preference towards the \textit{A} version of the website. Specifically, respondents generally found that the linear chronological form was easier to navigate and proved to be more effective at clearly displaying the information.
+
+TODO: Substantiate claims
+
+TODO: Quotes
+
+TODO: Survey Figure
+
+\begin{figure*}
+  \includegraphics{abtest.png}
+  \caption{
+    \label{fig:abtest}
+    Screencaptures showing \textit{A/B} test variants
+  }
+
+\end{figure*}
 
 \subsection{Informal Interview}\label{subsec:interview}
 
