@@ -45,23 +45,27 @@
 %\tableofcontents
 %\newpage
 
-\section{Design Decisions}\label{design-decisions}
+\section{Concept}\label{sec:concept}
 
 \begin{marginfigure}
   \includegraphics{acceptance_admissions_affinity.png}
   \caption{
     \label{fig:accept-admit-affinity}
     A section of an Affinity Diagram, where all the questions about admissions relate to the timing of admissions. Other qustions in the `Acceptance and Admissions' group pertained to meeting conditions and the post-decision process.}
+\vspace{1em}
 \end{marginfigure}
 
-The affinity diagrams produced by the tutorial groups revealed that the questions asked could easily be mapped in accordance with \textit{time} in the lead up to starting at the University of Edinburgh. Following from that, we propose an interface centred on a timeline, with information arranged in cards sequentially placed along a vertically descending line. Iconography down the timeline allows quick scanning and recognition, with the icon roundalls being clickable, to mark the accompanying content card as \texttt{done} (Here, 'done', is rather abstract; meaning completed or no longer requiring the user's attention).
-\section{Design Motivations}\label{design-motivations}
+The affinity diagrams produced by the tutorial groups suggest that the questions asked could easily be mapped chronologically in the lead up to, and immediately after, starting at the University of Edinburgh. Following from that, we propose an interface centred on a timeline, with information arranged in cards sequentially placed along a vertically descending line. Iconography down the timeline allows quick scanning and recognition, with the icon roundel being clickable, to mark the accompanying content card as \textit{done}
+\footnote{In this case \textit{done}, is rather abstract; meaning completed or no longer requiring the user's attention}
 
-Our colour scheme consists of three primary colours: pink, consistent with the University's branding for Fresher's week; blue, a colour used heavily by the University's welcome literature; and green, which is standard convention for progress.
 
-Continuing to adhere to the University's design guidelines, our page makes use of the \textit{Crimson Text} and \textit{Source Sans Pro} fonts.
+\section{Design Justification}\label{sec:design-justification}
 
-Upon loading the page, users are greeted by an illustrated \textit{hero image} of the University's Old College. The hero serves as a clear and obvious call to above the fold; stating what the page it is, who it is for and what it contains. Beneath the fold is a timeline that has \textit{cards}\footnote{Inspired by \textit{Material Design}, a subtle shadow drawn from the card mimics that of physical paper.} spread out in a \textit{zigzag}fashion, centring the user's focus on one item at a time whilst creating a vertical progression that logically follows from the content's temporal nature. Each card is signposted by an \textit{icon} which allows for users to get an immediate idea of its contents. \textit{Buttons} were opted for over plain hyperlinks, following the belief that buttons offer more affordance to the user.
+Our colour scheme consists of three primary colours: pink, consistent with the University's branding for Fresher's week; blue, a colour used heavily by the University's welcome literature; and green, which is a commonly used colour indicative of positive progress or success.
+
+Continuing to adhere to the University's design guidelines, our design makes use of the \textit{Crimson Text} and \textit{Source Sans Pro} fonts.
+
+Upon loading the page, users are greeted by an illustrated \textit{hero image} of the University's Old College. The hero serves as a clear call to action above the fold, and grounds content below -- stating what the page it is, who it is for and what it contains. Beneath the fold begins the timeline that has \textit{cards}\footnote{Inspired by the \textit{Material Design} paradigm, a drop shadow drawn from below the card mimics that of physical paper's interaction with light.} spread out in a \textit{zigzag} fashion, centring the user's focus on one item at a time whilst creating a vertical progression that logically follows from the content's temporal nature. Each card is signposted by an \textit{icon} which alludes to it's content and topic. \textit{Buttons} were opted for over plain hyperlinks, following the belief that buttons afford clickability more than a traditional blue hyperlink. Further to this buttons hold more visual weight and from a usability perspective present a larger touch target on smaller, touchscreen devices.
 
 %% REQUIREMENTS %%
 
@@ -72,11 +76,18 @@ Upon loading the page, users are greeted by an illustrated \textit{hero image} o
 % 76% of the page-views with a scroll-bar, were scrolled to some extent.
 % 22% of the page-views with a scroll-bar, were scrolled all the way to the bottom.
 
-\section{Questionnaire}\label{survey-monkey-questionnaire-and-analysis}
+\section{Interaction Design}\label{label:interaction-design}
 
-In order to carry out A/B testing, two different versions of the webpage were crafted. The A design utilised the aforementioned timeline format; the \textit{challenger} B design instead presented cards with a grid formation. The results from the survey, consisting of the \emph{30} responses received, showed a strong preference towards the A version of the website. Specifically, respondents generally found that the linear chronological form was easier to navigate and proved to be more effective at clearly displaying the information.
+Our team chose to implement the \textit{instructing and manipulating} interactions on our webpage. Early versions of the webpage held an attempt at conversing with the user by prompting them on arrival with an \textit{instant messaging} conversational form, with the hope of gauging what type of student they are. It had been hoped that this would allow for the page to be tailored in accordance with that particular student's needs. For example, hiding information regarding visas to students who already reside in the UK or ROI, yet displaying it those who live elsewhere. This feature was ultimately scrapped as it proved to be complex to implement within our given time frame, and given it's dependance on persistent state, out of scope.
 
-\section{Usability Analysis}
+
+\section{Usability Testing}\label{sec:usability-testing}
+
+\subsection{A/B Testing}\label{subsec:a-b-testing}
+
+To conduct an \textit{A/B} test, two different versions of the webpage were created -- \textit{A}'s design utilised the aforementioned timeline format; the \textit{challenger} \textit{B} design instead presented a more conventional tiled card formation. The results from the survey, consisting of the \emph{30} responses received, showed a strong preference towards the \textit{A} version of the website. Specifically, respondents generally found that the linear chronological form was easier to navigate and proved to be more effective at clearly displaying the information.
+
+\subsection{Informal Interview}\label{subsec:interview}
 
 % Reasoning behind why the website is usable. This section will likely include 
 % the outcome of any evaluations you conducted. Unlike the last coursework I do 
@@ -84,7 +95,7 @@ In order to carry out A/B testing, two different versions of the webpage were cr
 % on the method you used is fine. The key is providing reasoning on either why 
 % the site is usable, or what you changed to make it so.
 
-We made use of our tutorials in order to extensively question tutors to get feedback throughout different stages of development. Questions were prepared before the evaluations and hand written notes were taken of the feedback given back. Several design changes were made following the feedback which helped lead to an improved product.
+Tutorials to informally interview tutors to get feedback on the interface and concept throughout different stages of development. Broad questions were prepared before the evaluations and hand written notes were taken of the feedback given back. Several design changes were made following the feedback which helped lead to an improved product.
 
 \section{Reflection}
 
@@ -92,13 +103,9 @@ We made use of our tutorials in order to extensively question tutors to get feed
 % What worked, what didn't, and if you could go back and do this coursework 
 % again what might you do differently the next time.
 
-Upon completion of the implementation phase of our webpage we realised that a huge aid to us as a group had been the robustness and relatively small learning curve of \textit{Bootstrap}. \textit{Bootstrap} allowed for us to refine and expand upon previously existing templates, producing a webpage boasting a responsive design. Undertaking the implementation phase in this manner allowed for the team to spend more time developing our test phase and the subsequent write up. It is known that the webpage still suffers from flaws, mostly as a result of time-constraints and incomplete implementations, yet in the face of positive feedback it was decided to cease the webpage's implementation.
+Upon completion the of web implementation we realised that a huge aid to us as a group had been the robustness and relatively small learning curve of \textit{Bootstrap}. \textit{Bootstrap} allowed for us to refine and expand upon previously existing templates, producing a webpage boasting a responsive design. Undertaking the implementation phase in this manner allowed for the team to spend more time developing our test phase and the subsequent write up. It is known that the webpage still suffers from flaws, mostly as a result of time-constraints and incomplete implementations, yet in the face of positive feedback it was decided to cease the webpage's implementation.
 
 One request raised within feedback was for the webpage to remember stateful information. Our team had hoped to implement this, whether it be the usage of cookies or whatnot, as it would have been exceedingly beneficial to new students looking to continuously monitor their progress before and immediately after starting university. If this were to be implemented, it would tie in to the core element that is the timeline and embolden the page's theme of chronological progression.
-
-\section{Instructing and Manipulating (Interaction Methods)}\label{instructing-and-manipulatinginteraction-methods}
-
-Our team chose to implement the \textit{instructing and manipulating} methods on our webpage. Early alpha versions held an attempt at conversing with the user by prompting them on arrival with \textit{multiple choice tick box} questions with the hope of gauging what type of student they are. It had been hoped that this would allow for the page to be tailored in accordance with that particular student's needs. Examples of this would be hiding information regarding visas to students who already reside in the UK or Éire, yet displaying it those who live elsewhere. This implementation was ultimately scrapped as it proved to be less feasible to implement within our given time frame.
 
 
 \section{Tools and Templates}
@@ -109,8 +116,9 @@ Our team chose to implement the \textit{instructing and manipulating} methods on
 \begin{description}
 
 \item[Jekyll]
-Static site generator (used by GitHub pages) written in Ruby. Supports Markdown for 
+Static site generator written in Ruby. Supports Markdown for 
 content markup and the \textit{SASS} CSS pre-processor.
+Hosting provided by GitHub pages.
 \\
 \href{http://jekyllrb.com/}{http://jekyllrb.com/}
 
@@ -124,6 +132,11 @@ Web Icon set, freely available.
 \\
 \href{http://fontawesome.io/}{http://fontawesome.io/}
 
+
+\item[JQuery]
+JavaScript frontend library
+\\
+\href{https://jquery.com/}{https://jquery.com/}
 
 \item[University of Edinburgh Style Guide]
 Fonts -- Serif:- \textit{Crimson Text}, Sans-Serif: \textit{Source Sans Pro} both 
