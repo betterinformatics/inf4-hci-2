@@ -52,6 +52,13 @@
 %\tableofcontents
 %\newpage
 
+\vspace{1em}
+\noindent
+\href{http://toaster.cc/inf4-hci-2}{\textit{http://toaster.cc/inf4-hci-2}}
+
+
+\vspace{1em}\noindent \textbf{TODO:} Ye Olde \verb|M-x ispell|
+
 \section{Concept}\label{sec:concept}
 
 \begin{marginfigure}
@@ -76,19 +83,12 @@ requiring the user's attention}
 
 \section{Design Justification}\label{sec:design-justification}
 
-Our colour scheme consists of three primary colours: pink, consistent with the University's 
-branding for Fresher's week; blue, a colour used heavily by the University's welcome literature; 
-and green, which is a commonly used colour indicative of positive progress or success.
-
-Continuing to adhere to the University's design guidelines, our design makes use of the 
-\textit{Crimson Text} and \textit{Source Sans Pro} fonts, which feature on the newer 
-generation of \textit{www.ed.ac.uk} websites as the two primary font faces.
-
 Upon loading the page, users are greeted by an illustrated \textit{hero image} of the 
 University's Old College. The hero serves as a call to action above the fold, and grounds 
 content below -- stating what the page it is, who it is for and what it contains. The content 
 card within the hero sits offset from center, which introduces the zigzag of the timeline 
-below. Beneath the fold begins the timeline that has \textit{cards}\footnote{Inspired by 
+below and gives a more balanced composition than if it where centred. Beneath the fold begins 
+the timeline that has \textit{cards}\footnote{Inspired by 
 the \textit{Material Design} paradigm, a drop shadow drawn from below the card mimics that 
 of physical paper's interaction with light.} spread out in a zigzag, centring the user's 
 focus on one item at a time whilst creating a vertical progression that logically follows 
@@ -100,45 +100,69 @@ the belief that buttons afford clickability more than a traditional blue hyperli
 to this buttons hold more visual weight and from a usability perspective present a larger 
 touch target on smaller, touchscreen devices.
 
+The timeline's zigzagging left and right cards perhaps make less effective use of space than
+a more conventional tiled grid of cards, or continuous prose though many studies
+\footnote{\textbf{Unfolding the fold (insights into webpage scroll)}\\
+91\% of the page-views had a scroll-bar, of which
+76\% were scrolled to some extent.
+22\% of the scrollable pages were scrolled all the way to the bottom.
+\textit{https://www.clicktale.com/academy/blog/unfolding-the-fold-insights-into-webpage-scroll/}}
+have shown that making users scroll on the web is unlikely to have detrimental effect on usability
+nor on the user's sentiment towards the website.
 
-% Users aren't affraid to scroll --> Justifies super long single page
-% https://www.clicktale.com/academy/blog/unfolding-the-fold-insights-into-webpage-scroll/
-%
-% 91% of the page-views had a scroll-bar.
-% 76% of the page-views with a scroll-bar, were scrolled to some extent.
-% 22% of the page-views with a scroll-bar, were scrolled all the way to the bottom.
+Our colour scheme consists of three primary colours: pink, consistent with the University's 
+branding for Fresher's week; blue, a colour used heavily by the University's welcome literature; 
+and green, which is a commonly used colour indicative of positive progress or success.
+
+Continuing to adhere to the University's design guidelines, our design makes use of the 
+\textit{Crimson Text} and \textit{Source Sans Pro} fonts, which feature on the newer 
+generation of \texttt{www.ed.ac.uk} websites as the two primary font faces.
+
+\begin{marginfigure}
+  \includegraphics[width=\linewidth]{interface-mobile.png}
+  \caption{
+    \label{fig:interfacemob}
+    Screen capture of the interface on an Android mobile device, demonstrating responsive
+    design.
+  }
+\end{marginfigure}
+
+As just over 50\% of web usage, and in particular searches originates from a mobile device,
+we see it as a requirement for the interface to responsively adapt depending on the 
+viewport of the user. Our interface is fully responsive with breakpoints from small
+mobile (360px) up to large desktops (1200px).
 
 \section{Interaction Design}\label{label:interaction-design}
 
 Our team chose to implement the \textit{instructing and manipulating} interactions on our 
-webpage. TODO: GIVE EXAMPLE OF WHERE IN DESIGN Early versions of the webpage held an attempt 
-at conversing with the user by prompting them on arrival with an \textit{instant messaging} 
-conversational form, with the hope of gauging what type of student they are. It had been 
+webpage. Notably, the \textit{timeline's} state is mutable, with the afforementioned
+clickable roundels affecting the state of their associated content cards. The \textit{Take a Tour}
+modal presents a common method of instructing a user; this is perhaps particularly important
+as it allows us to introduce all the features of a somewhat unfamiliar interface.
+
+TODO: Maybe more? Over half is about a feature we removed
+
+Early versions of the webpage held an attempt 
+at \textit{conversing} with the user by prompting them on arrival with an \textit{instant 
+messaging} form, with the hope of gauging what type of student they are. It had been 
 hoped that this would allow for the page to be tailored in accordance with that particular 
 student's needs. For example, hiding information regarding visas to students who already 
 reside in the UK or Éire, yet displaying it those who live elsewhere. This feature was 
 ultimately scrapped as it proved to be complex to implement within our given time frame, and 
 given it's dependance on persistent state, out of scope.
 
-TODO: Tour justification, reasoning and explain
 
 \section{Usability Testing}\label{sec:usability-testing}
 
+% Reasoning behind why the website is usable. This section will likely include 
+% the outcome of any evaluations you conducted. Unlike the last coursework I do 
+% not expect you to do a full formal analysis and description. A few sentences 
+% on the method you used is fine. The key is providing reasoning on either why 
+% the site is usable, or what you changed to make it so.
+
 \subsection{A/B Testing}\label{subsec:a-b-testing}
 
-To conduct an \textit{A/B} test, two different versions of the webpage were created -- 
-\textit{A}'s design utilised the aforementioned timeline format; the \textit{challenger} 
-\textit{B} design instead presented a more conventional tiled card formation. These variants 
-are shown in Figures \ref{fig:avariant} and \ref{fig:bvariant}.
-
-Analysis of the test was carried out with \textit{Google Analytics' A/B Testing facility}. 
-Respondents were randomly served with either the \textit{A} or \textit{B} variant; subsequently 
-their time spent on the page was recorded and a link to an optional survey produced at the bottom of page.
-
-The results from the survey, consisting of the more than \emph{60} responses received, showed 
-a strong preference towards the \textit{A} version of the website. Specifically, respondents 
-generally found that the linear chronological form was easier to navigate and proved to be more 
-effective at clearly displaying the information.
+TODO: Results figure should be full width
 
 \begin{marginfigure}
   \includegraphics[width=\linewidth]{abresults.png}
@@ -150,11 +174,6 @@ effective at clearly displaying the information.
   }
 \end{marginfigure}
 
-TODO: Substantiate claims
-
-TODO: Quotes
-
-TODO: Survey Figure
 
 \begin{marginfigure}
   \includegraphics[width=\linewidth]{avariant.png}
@@ -174,16 +193,38 @@ TODO: Survey Figure
 
 \end{marginfigure}
 
+To conduct an \textit{A/B} test, two different versions of the webpage were created -- 
+\textit{A}'s design with the aforementioned timeline format; the \textit{challenger} 
+\textit{B} design instead presenting a more conventional tiled card formation. These variants 
+are shown in Figures \ref{fig:avariant} and \ref{fig:bvariant}.
+
+Analysis of the test was carried out with \textit{Google Analytics' A/B Testing facility}. 
+Respondents were randomly served with either the \textit{A} or \textit{B} variant; subsequently 
+their time spent on the page was recorded and a link to a usability evaluation survey was
+placed in the footer (respondents were asked prior to beginning to complete the survey)
+
+TODO: Why did we use a survey (statistical significance (small sample), Google analytics metrics not
+particularly relevant/necessarily indicaticve of better, gain better insight)
+
+TODO: Cannot make this claim unless it's statistically significant or at least close to it
+The results from the survey, consisting of the more than \emph{24} responses, showed 
+a preference towards the \textit{A} version of the website. Specifically, respondents 
+generally found that the linear chronological form was easier to navigate and proved to be more 
+effective at clearly displaying the information. However, respondents tended to prefer the density
+of the \textit{challenger B} over the timeline. 
+
+TODO: Substantiate claims
+
+TODO: Quotes
+
+TODO: Suggested improvements based on A/B not being massively pro timeline (e.g. overlap cards...)
+
 \subsection{Informal Interview}\label{subsec:interview}
 
-% Reasoning behind why the website is usable. This section will likely include 
-% the outcome of any evaluations you conducted. Unlike the last coursework I do 
-% not expect you to do a full formal analysis and description. A few sentences 
-% on the method you used is fine. The key is providing reasoning on either why 
-% the site is usable, or what you changed to make it so.
-
 Tutorials to informally interview tutors to get feedback on the interface and concept throughout 
-different stages of development. Broad questions were prepared before the evaluations and hand 
+different stages of development. 
+TODO: Rewrite previous sentence, doens't read well. 
+Broad questions were prepared before the evaluations and hand 
 written notes were taken of the feedback given back. Several design changes were made following 
 the feedback which helped lead to an improved product.
 
@@ -193,12 +234,14 @@ the feedback which helped lead to an improved product.
 % What worked, what didn't, and if you could go back and do this coursework 
 % again what might you do differently the next time.
 
-Upon completion the of web implementation we realised that a huge aid to us as a group had been 
+TODO: Angus doesn't like this whole paragraph... (Not really reflection, meh, not saying much about actual design... don't really have space for meta like this)
+\texttt{Upon completion the ofinterface defelopment we realised that a huge aid to us as a group had been 
 the robustness and relatively small learning curve of \textit{Bootstrap}. \textit{Bootstrap} 
 allowed for us to refine and expand upon previously existing templates, producing a webpage 
 boasting a responsive design. Undertaking the implementation phase in this manner allowed for 
-the team to spend more time developing our test phase and the subsequent write up. Mostly as 
-a result of time-constraints and the nature of the task the interaction design \& UI lack 
+the team to spend more time developing our test phase and the subsequent write up.}
+
+Mostly as a result of time-constraints and the nature of the task the interaction design \& UI lack 
 polish, with some interactions (most notably the Next \& Previous buttons) behaving in a simpler 
 or less intuitave way than hoped. Yet, in the face of the already positive feedback it was 
 decided to develop the webpage no further.
