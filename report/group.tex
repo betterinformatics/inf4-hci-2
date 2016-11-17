@@ -42,7 +42,7 @@
 \maketitle % this prints the handout title, author, and date
 \vspace{1em}
 \noindent
-2\begin{tabular}{l r}
+\begin{tabular}{l r}
   Chris Campbell & s1334028\\
   Karel Kuzmiak  & s1334628\\
   Angus Pearson  & s1311631\\
@@ -55,9 +55,6 @@
 \vspace{1em}
 \noindent
 \href{http://toaster.cc/inf4-hci-2}{\textit{http://toaster.cc/inf4-hci-2}}
-
-
-\vspace{1em}\noindent \textbf{TODO:} Ye Olde \verb|M-x ispell|
 
 \section{Concept}\label{sec:concept}
 
@@ -162,8 +159,6 @@ given it's dependance on persistent state, out of scope.
 
 \subsection{A/B Testing}\label{subsec:a-b-testing}
 
-TODO: Results figure should be full width
-
 \begin{marginfigure}
   \includegraphics[width=\linewidth]{abresults.png}
   \caption{
@@ -201,21 +196,14 @@ are shown in Figures \ref{fig:avariant} and \ref{fig:bvariant}.
 Analysis of the test was carried out with \textit{Google Analytics' A/B Testing facility}. 
 Respondents were randomly served with either the \textit{A} or \textit{B} variant; subsequently 
 their time spent on the page was recorded and a link to a usability evaluation survey was
-placed in the footer. The survey was offered with the intention that it would provide insight on how effective certain design elements, such as the \textit{Zig-Zag timeline}, were at conveying the abundance of information in a clear-cut and logical manner.
+placed in the footer. The survey was offered with the intention that it would provide insight on how 
+each variant of the webpage was at relaying such a large amount of information.
 
-Over \emph{60} respondents participated in the \textit{A/B Testing}, with a further \emph{29} completing the survey.
-
-The results from the survey, consisting of the more than \emph{24} responses, showed 
-a preference towards the \textit{A} version of the website. Specifically, respondents 
-generally found that the linear chronological form was easier to navigate and proved to be more 
-effective at clearly displaying the information. However, respondents tended to prefer the density
-of the \textit{challenger B} over the timeline. 
-
-TODO: Substantiate claims
-
-TODO: Quotes
-
-TODO: Suggested improvements based on A/B not being massively pro timeline (e.g. overlap cards...)
+The results from the survey, consisting of \emph{24} responses, showed that feedback to both
+the \textit{A} and \textit{B} variants was mainly positive. A large proportion of the respondents to the
+survey had visited the page using mobile browsers, which responded better to the \textit{B} variant's grid design.
+Given that the A design was more optimised for desktop, we stand by that the A version would overall be more popular if we had been able to ensure that respondents could only make
+use of a desktop browser.
 
 \subsection{Informal Interview}\label{subsec:interview}
 
@@ -226,6 +214,12 @@ Tutorials allowed for us to get in-depth and interactive feedback as development
 % Reflection paragraph: what you have learned from completing this coursework. 
 % What worked, what didn't, and if you could go back and do this coursework 
 % again what might you do differently the next time.
+
+Upon completion of the interface development, we realised that a huge aid to us as a group had been 
+the robustness and relatively small learning curve of \textit{Bootstrap}. \textit{Bootstrap} 
+allowed for us to refine and expand upon previously existing templates, producing a webpage 
+boasting a responsive design. Undertaking the implementation phase in this manner allowed for 
+the team to spend more time developing our test phase and the subsequent write up.
 
 Mostly as a result of time-constraints and the nature of the task, the interaction design \& UI lack 
 polish, with some interactions (most notably the Next \& Previous buttons) behaving in a simpler 
@@ -283,8 +277,6 @@ and associated pages.
 \end{description}
 
 
-
-
 \section*{Group Mark Allocation}\label{group-mark-allocation}
 %% REQUIREMENTS %%
 
@@ -294,7 +286,21 @@ and associated pages.
 % for the general design of the website and the remaining 40 points will be marked 
 % based on the individual portion of the work.
 
-We wish for allocated marks to be identical for each member of our team.
+We wish for allocated marks to be identical for each member in our team.
+
+\newpage
+
+\begin{appendix}
+\section{Survey Questions}
+\begin{enumerate}
+\item Was it easy to navigate through the web page?
+\item Was content clearly displayed?
+\item Was space used effectively?
+\item Would you be likely to recommend the web page to a student starting out at The University of Edinburgh?
+\end{enumerate}
+
+\textit{Every question provided weighted answers: Strongly Agree, Agree, Neither Agree nor Disagree, Disagree, Strongly Disagree}
+\end{appendix}
 
 \end{document}
 
