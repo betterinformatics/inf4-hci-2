@@ -9,6 +9,7 @@
 %\date{1st January 1970} % without \date command, current date is supplied
 
 %\geometry{showframe} % display margins for debugging page layout
+\usepackage[utf8]{inputenc}
 \usepackage{appendix}
 \usepackage{graphicx} % allow embedded images
 \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
@@ -77,17 +78,19 @@ Upon loading the page, users are greeted by an illustrated \textit{hero image} o
 
 \section{Interaction Design}\label{label:interaction-design}
 
-Our team chose to implement the \textit{instructing and manipulating} interactions on our webpage. TODO: GIVE EXAMPLE OF WHERE IN DESIGN Early versions of the webpage held an attempt at conversing with the user by prompting them on arrival with an \textit{instant messaging} conversational form, with the hope of gauging what type of student they are. It had been hoped that this would allow for the page to be tailored in accordance with that particular student's needs. For example, hiding information regarding visas to students who already reside in the UK or ROI, yet displaying it those who live elsewhere. This feature was ultimately scrapped as it proved to be complex to implement within our given time frame, and given it's dependance on persistent state, out of scope.
+Our team chose to implement the \textit{instructing and manipulating} interactions on our webpage. TODO: GIVE EXAMPLE OF WHERE IN DESIGN Early versions of the webpage held an attempt at conversing with the user by prompting them on arrival with an \textit{instant messaging} conversational form, with the hope of gauging what type of student they are. It had been hoped that this would allow for the page to be tailored in accordance with that particular student's needs. For example, hiding information regarding visas to students who already reside in the UK or Éire, yet displaying it those who live elsewhere. This feature was ultimately scrapped as it proved to be complex to implement within our given time frame, and given it's dependance on persistent state, out of scope.
 
 TODO: Tour justification, reasoning and explain
-
-
 
 \section{Usability Testing}\label{sec:usability-testing}
 
 \subsection{A/B Testing}\label{subsec:a-b-testing}
 
-To conduct an \textit{A/B} test, two different versions of the webpage were created -- \textit{A}'s design utilised the aforementioned timeline format; the \textit{challenger} \textit{B} design instead presented a more conventional tiled card formation. These variants are shown in Figure \ref{fig:abtest}. The results from the survey, consisting of the \emph{30} responses received, showed a strong preference towards the \textit{A} version of the website. Specifically, respondents generally found that the linear chronological form was easier to navigate and proved to be more effective at clearly displaying the information.
+To conduct an \textit{A/B} test, two different versions of the webpage were created -- \textit{A}'s design utilised the aforementioned timeline format; the \textit{challenger} \textit{B} design instead presented a more conventional tiled card formation. These variants are shown in Figures \ref{fig:avariant} and \ref{fig:bvariant}.
+
+Analysis of the test was carried out with \textit{Google Analytics' A/B Testing facility}. Respondents were randomly served with either the \textit{A} or \textit{B} variant; subsequently their time spent on the page was recorded and a link to an optional survey produced at the bottom of page.
+
+The results from the survey, consisting of the more than \emph{60} responses received, showed a strong preference towards the \textit{A} version of the website. Specifically, respondents generally found that the linear chronological form was easier to navigate and proved to be more effective at clearly displaying the information.
 
 TODO: Substantiate claims
 
@@ -95,16 +98,23 @@ TODO: Quotes
 
 TODO: Survey Figure
 
-TODO: Explain methodology, Google Analytics
-
-\begin{figure*}
-  \includegraphics{abtest.png}
+\begin{marginfigure}
+  \includegraphics[width=\linewidth]{avariant.png}
   \caption{
-    \label{fig:abtest}
-    Screencaptures showing \textit{A/B} test variants
+    \label{fig:avariant}
+    Screencapture showing \textit{A Variant} from \textit{A/B Testing}.
   }
 
-\end{figure*}
+\end{marginfigure}
+
+\begin{marginfigure}
+  \includegraphics[width=\linewidth]{bvariant.png}
+  \caption{
+    \label{fig:bvariant}
+    Screencapture showing \textit{B Variant} from \textit{A/B Testing}.
+  }
+
+\end{marginfigure}
 
 \subsection{Informal Interview}\label{subsec:interview}
 
@@ -122,7 +132,7 @@ Tutorials to informally interview tutors to get feedback on the interface and co
 % What worked, what didn't, and if you could go back and do this coursework 
 % again what might you do differently the next time.
 
-Upon completion the of web implementation we realised that a huge aid to us as a group had been the robustness and relatively small learning curve of \textit{Bootstrap}. \textit{Bootstrap} allowed for us to refine and expand upon previously existing templates, producing a webpage boasting a responsive design. Undertaking the implementation phase in this manner allowed for the team to spend more time developing our test phase and the subsequent write up. Mostly as a result of time-constraints and the nature of the task the interaction design \& UI lack polish, with some interactions (most notably the Next & Previous buttons) behaving in a simpler or less intuitave way than hoped. Yet, in the face of the already positive feedback it was decided to develop the webpage no further.
+Upon completion the of web implementation we realised that a huge aid to us as a group had been the robustness and relatively small learning curve of \textit{Bootstrap}. \textit{Bootstrap} allowed for us to refine and expand upon previously existing templates, producing a webpage boasting a responsive design. Undertaking the implementation phase in this manner allowed for the team to spend more time developing our test phase and the subsequent write up. Mostly as a result of time-constraints and the nature of the task the interaction design \& UI lack polish, with some interactions (most notably the Next \& Previous buttons) behaving in a simpler or less intuitave way than hoped. Yet, in the face of the already positive feedback it was decided to develop the webpage no further.
 
 One request raised within feedback was for the webpage to remember stateful information. Our team had hoped to implement this, as it would have been exceedingly beneficial to new students looking to continuously monitor their progress before and immediately after starting University, however we deem developing a backend out of scope. If this were to be developed, it would tie in to the core element that is the timeline and embolden the page's theme of chronological progression.
 
