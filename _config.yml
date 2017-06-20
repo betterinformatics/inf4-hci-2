@@ -1,7 +1,7 @@
 # Site Settings
 title: HCI2
 description: ""
-baseurl: "/inf4-hci-2"
+baseurl:
 url: ""
 author: "Angus P, Chris C, Ben S, Karel K"
 author_avatar: ""
